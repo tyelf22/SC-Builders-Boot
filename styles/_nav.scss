@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 10%;
+    background-color: #35A0D4;
+    box-shadow: 0 8px 6px -6px #999;
+    
+
+    .checkBtn {
+        font-size: 30px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .checkBtnTwo {
+        font-size: 30px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #checkTwo {
+        display: none;
+    }
+    
+    .logo {
+        height: 60px;
+        width: 100px;
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    .navLinks {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 0px 20px;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                transition: all 0.3s ease 0s;
+                color: black;
+            }
+            a:hover {
+                color: red;
+            }
+        }
+    }
+
+    .contactBtn {
+        margin-left: 20px; 
+        padding: 9px 25px;
+        background-color: red;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: white;
+    }
+
+    .contactBtn:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (max-width: 950px){
+    header {
+        .checkBtn {
+            display: block;
+        }
+
+        .contactBtn {
+            position: fixed;
+            left: -100%;
+            top: 60vh;
+            transform: translate(-50%, -50%);
+            margin-left: 0px; 
+            width: 40%;
+            transition: all .5s;
+            background-color: black;
+        }
+        .navLinks{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: red;
+            top: 75px;
+            left: -100%;
+            text-align:center;
+            transition: all .5s;
+
+            li {
+                display: block;
+                margin-top: 30px;
+
+                a {
+                    font-size: 25px;
+                }
+                a:hover {
+                    background: none;
+                    color: white;
+                }
+            }
+        }
+
+        // #check:checked ~ ul{
+        //     left: 0;
+        // }
+    }
+}

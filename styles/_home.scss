@@ -1,0 +1,17 @@
+.container-fluid {
+    height: 600px;
+    background-color: green;
+    .box {
+        height: 200px;
+        background-color: red;
+        padding: 0;
+
+        .newContainer {
+            margin: 0;
+        }
+
+        .newCol {
+            background-color: blue;
+        }
+    }
+}
