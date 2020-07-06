@@ -23,12 +23,10 @@
 
 
 .cardContainer {
-    border: 1px solid pink;
     padding: 0;
     .cards {
         display: flex;
         justify-content: space-evenly;
-        border: 2px solid green;
         .card {
             height: 500px;
             width: 350px;
