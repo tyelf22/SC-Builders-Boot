@@ -1,26 +1,36 @@
 .aboutbg 
+{
+    height: 600px;
+    background-image: url(../images/aboutbg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0;
+
+.overlay
     {
-        height: 600px;
-        background-image: url(../images/aboutbg.jpg);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding:0;
-
-    .overlay
-        {
-            height: 100%;
-            width: 100%;
-            background: rgba(0,0,0,0.2);
-            text-align: center;
-        }
-
-    }
-
-.box
-    {
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.4);
         text-align: center;
-        padding-top: 50px;;
-        color: white;
-        background: none;
+
+        .box
+            {
+                text-align: center;
+                padding-top: 200px;;
+                color: white;
+                background: none;
+
+                h1
+                {
+                    font-size: 60px;
+                }
+
+                p
+                {
+                    font-size: 40px;
+                }
+            }
     }
+
+}
