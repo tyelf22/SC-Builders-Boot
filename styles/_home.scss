@@ -1,17 +1,28 @@
 .container-fluid {
-    height: 600px;
-    background-color: green;
-    .box {
-        height: 200px;
-        background-color: red;
+    padding: 0 0;
+    background-color: blue;
+    height: 91vh;
+
+    .jumboText{
+        background-color: yellow;
         padding: 0;
-
-        .newContainer {
-            margin: 0;
-        }
-
-        .newCol {
-            background-color: blue;
+        
+        h1 {
+            padding-top: 80px;
         }
     }
 }
+
+
+@media (min-width: 700px) {
+    .container{
+        max-width: 75%; //Change to pixels?
+    }
+}
+
+.mainCont {
+    height: 2000px;
+    width: 100%;
+    background-color: magenta;
+}
+
