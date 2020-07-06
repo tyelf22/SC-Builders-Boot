@@ -21,3 +21,49 @@
 
 }
 
+
+.cardContainer {
+    border: 1px solid pink;
+    padding: 0;
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid green;
+        .card {
+            height: 500px;
+            width: 350px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            img {
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+
+        .cards {
+            display: block;
+
+
+            .card {
+                margin-top: 10px;
+
+                img {
+
+                }
+            }
+        }
+    }
+
+}
+
