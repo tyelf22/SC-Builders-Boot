@@ -1,21 +1,197 @@
- /*.container-fluid {
-    padding: 0 0;
-    height: 91vh; */
+//Home Jumbo
+.homeJumbo {
+    height: 600px;
+    background-image: url(../images/aboutbg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    text-align: center;
+    
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+
+    .homeJumboCont{
+        margin: 0 11.5%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .homeText {
+            width: 100%;
+            color: white;
+
+            h1 {
+                font-size: 45px;
+                text-transform: uppercase;
+            }
+
+            p{
+                font-family: $secondaryText;
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+            
+            button {
+                color: white;
+                border-radius: 25px;
+                border: 2px solid $primaryColor;
+                padding: 5px 20px;
+                background: none;
+                transition: all 0.3s ease 0s;
+                margin-top: 10px;
 
 
-    .box {
-        height: 200px;
-        background-color: blue;
-        padding: 0;
+                &:hover {
+                    color: black;
+                    background: white;
+                    border: 2px solid white;
+                }
+            }
 
-    .jumboText{
-        background-color: yellow;
-        padding: 0;
-        
-        h1 {
-            padding-top: 80px;
         }
     }
+
+}
+
+//Home Container
+.homeCont {
+    margin-top: 50px;
+    margin-bottom: 50px; //delete this
+    h2 {
+        text-align: center;
+
+        &:after {
+            background-color: $primaryColor; 
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 2.5px;
+            width: 50px;
+            margin: 0 auto;
+        }
+    }
+
+    .promiseImg {
+        position: relative;
+        padding: 0;
+
+        img {
+            
+            
+        }
+        .blackBox{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);;
+            width: 100%;
+            height: 65px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .redBox{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(255, 0, 0, 0.7);
+            width: 100%;
+            height: 65px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            
+        }
+
+        h3{
+            line-height: 0.7;
+        }
+
+        .titleHead{
+            font-size: 20px;
+        }
+
+
+
+        .subHead {
+            font-size: 16px;
+        }
+    }
+
+}
+
+
+
+
+@media (min-width: 950px) {
+
+//Home Jumbo
+.homeJumbo {
+    text-align: left;
+
+    .homeJumboCont{
+
+        .homeText {
+
+            h1{
+                font-size: 55px;
+            }
+
+        }
+    }
+
+}
+
+
+//Home Container
+.homeCont {
+
+    h2 {
+
+
+        &:after {
+
+        }
+    }
+
+    .promiseImg {
+
+
+        img {
+            
+            
+        }
+        .blackBox{
+
+        }
+        .redBox{
+
+            
+        }
+
+        h3{
+            line-height: 0.9;
+        }
+
+        .titleHead{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+
+        .subHead {
+
+        }
+    }
+
+}
+
 }
 
 
