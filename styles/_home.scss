@@ -7,6 +7,7 @@
     background-size: cover;
     padding: 0;
     text-align: center;
+    margin-bottom: $primaryBMargin;
     
 
     .overlay {
@@ -60,10 +61,11 @@
 
 //Home Container
 .homeCont {
-    margin-top: 50px;
-    margin-bottom: 50px; //delete this
+    margin-bottom: $primaryBMargin;
     h2 {
         text-align: center;
+        font-size: $primarySize;
+        margin-bottom: 30px;
 
         &:after {
             background-color: $primaryColor; 
@@ -76,121 +78,151 @@
         }
     }
 
+    .promiseCont {
+        text-align: center;
+        margin: auto 0;
+
+        i {
+            font-size: 40px;
+        }
+
+        .promiseCol{
+            margin: 30px 0;
+            padding: 5px;
+            width: 100%;
+
+            h3{
+                // white-space: nowrap;
+            }
+        }
+    }
+
     .promiseImg {
         position: relative;
+        height: 500px;
+        background-image: url(../images/aboutbg.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 0;
 
-        img {
-            
-            
-        }
         .blackBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             bottom: 0;
             left: 0;
             background-color: rgba(0, 0, 0, 0.7);;
-            width: 100%;
+            width: 50%;
             height: 65px;
             color: white;
             text-align: center;
             text-transform: uppercase;
         }
         .redBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             bottom: 0;
             right: 0;
             background-color: rgba(255, 0, 0, 0.7);
-            width: 100%;
+            width: 50%;
             height: 65px;
             color: white;
             text-align: center;
             text-transform: uppercase;
-            
         }
 
         h3{
-            line-height: 0.7;
+            margin: 0;
         }
-
-        .titleHead{
-            font-size: 20px;
-        }
-
-
-
-        .subHead {
-            font-size: 16px;
+        p{
+            margin: 0;
         }
     }
 
 }
 
+// *************** Presidents Park ***************
+.pPark {
+    padding: 0;
+    margin-bottom: $primaryBMargin; //delete this
 
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: $primarySize;
+
+        &:after {
+            background-color: $primaryColor; 
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 2.5px;
+            width: 50px;
+            margin: 0 auto;
+        }
+    }
+
+    .pParkImageContainer {
+        position: relative;
+        height: 500px;
+        background-image: url(../images/presPark.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+
+        .pImageOverlay {
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        h3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 35px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+
+            &:hover{
+                font-size: 38px;
+            }
+
+            i{
+                font-size: 25px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
 
 
 @media (min-width: 950px) {
 
-//Home Jumbo
-.homeJumbo {
-    text-align: left;
+    //Home Jumbo
+    .homeJumbo {
+        text-align: left;
 
-    .homeJumboCont{
+        .homeJumboCont{
 
-        .homeText {
+            .homeText {
 
-            h1{
-                font-size: 55px;
+                h1{
+                    font-size: 55px;
+                }
+
             }
-
         }
     }
-
-}
-
-
-//Home Container
-.homeCont {
-
-    h2 {
-
-
-        &:after {
-
-        }
-    }
-
-    .promiseImg {
-
-
-        img {
-            
-            
-        }
-        .blackBox{
-
-        }
-        .redBox{
-
-            
-        }
-
-        h3{
-            line-height: 0.9;
-        }
-
-        .titleHead{
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-
-
-        .subHead {
-
-        }
-    }
-
-}
 
 }
 
