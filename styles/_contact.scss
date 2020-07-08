@@ -1,0 +1,93 @@
+.contact
+{
+    margin-bottom: 100px;
+
+    .verticalBorder
+    {
+        border-left: solid red 2px;
+        padding-left: 30px;
+    }
+    .spacer
+    {
+        margin-top: 40px;
+    }
+
+    .formSpacer
+    {
+        margin-bottom: 20px;
+    }
+
+    .requiredField
+    {
+        margin-top: 60px;
+    }
+
+    .inputHeight
+    {
+        height: 40px;
+    }
+
+    .commentHeight
+    {
+        height: 100px;
+    }
+
+.contactButton
+    {
+        color: $primaryColor;
+        border-radius: 25px;
+        border: 2px solid $primaryColor;
+        padding: 5px 10px;
+        width:100px;
+        background: none;
+    }
+} 
+
+//**************Adjust for large screen*****************
+@media (min-width: 950px){
+    .contact
+{
+    margin-bottom: 100px;
+
+    .verticalBorder
+    {
+        border-left: solid red 2px;
+        padding-left: 30px;
+    }
+    .nameSpacer
+    {
+        margin-top: 40px;
+    }
+
+    .formSpacer
+    {
+        margin-bottom: 20px;
+    }
+
+    .requiredField
+    {
+        margin-top: 60px;
+    }
+
+    .inputHeight
+    {
+        height: 40px;
+    }
+
+    .commentHeight
+    {
+        height: 100px;
+    }
+
+.contactButton
+    {
+        color: $primaryColor;
+        border-radius: 25px;
+        border: 2px solid $primaryColor;
+        padding: 5px 10px;
+        width:100px;
+        background: none;
+    }
+} 
+
+}
