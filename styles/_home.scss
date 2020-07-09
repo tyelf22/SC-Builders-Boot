@@ -38,20 +38,7 @@
             }
             
             button {
-                color: white;
-                border-radius: 25px;
-                border: 2px solid $primaryColor;
-                padding: 5px 20px;
-                background: none;
-                transition: all 0.3s ease 0s;
                 margin-top: 10px;
-
-
-                &:hover {
-                    color: black;
-                    background: white;
-                    border: 2px solid white;
-                }
             }
 
         }
@@ -202,6 +189,40 @@
                 margin: 0 10px;
             }
         }
+    }
+}
+
+// *************** Home Gallery ***************
+.homeGallery {
+    padding: 0;
+    margin-bottom: $primaryBMargin;
+
+
+    .homeGalleryContainer {
+        position: relative;
+        height: 500px;
+        background-image: url("../images/houseWide.PNG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        text-align: center;
+
+        .homeGalleryOverlay {
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .homeGalleryButton{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+            
     }
 }
 
