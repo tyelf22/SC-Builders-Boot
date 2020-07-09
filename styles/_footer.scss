@@ -1,97 +1,82 @@
-.footer
-    { 
-        //background-color: black;
-        //color: white;
-        margin-bottom: 50px;
-        height: 120px;
-        padding-top: 20px;
-        
-        .insta {
-            color: transparent;
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            font-size: 30px;
-            
-          }
-    
-          .fBook
-          {
-            font-size: 30px;
-          }
-    
-        .logo
-        {
-            height: 60px;
-            width: 100px;
-            cursor: pointer;
-            margin-right: auto;
-            cursor: default;
-        }
-        .footerContact
-        {
-            font-size: 10px;
-            line-height: 1px;
-            
-            .bold
-            {
-                font-size: 12px;
-                font-weight: bolder;
-            }
-        }
-        .copyRight
-        {
-            font-size: 8px;
-            margin-top: 35px;
-        }
-    
+.footer {
+    //background-color: black;
+    //color: white;
+    margin-bottom: 50px;
+    height: 120px;
+    padding-top: 20px;
+
+    .insta {
+        color: transparent;
+        background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+        );
+        background: -webkit-radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 30px;
     }
 
+    .fBook {
+        font-size: 30px;
+    }
 
-    @media (min-width: 950px){
-        .footer
-    { 
+    .logo {
+        height: 60px;
+        width: 100px;
+        cursor: pointer;
+        margin-right: auto;
+        cursor: default;
+    }
+    .footerContact {
+        font-size: 10px;
+        line-height: 1px;
 
-        
+        .bold {
+            font-size: 12px;
+            font-weight: bolder;
+        }
+    }
+    .copyRight {
+        font-size: 8px;
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 950px) {
+    .footer {
         .insta {
-            color: transparent;
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            background-clip: text;
-            -webkit-background-clip: text;
             font-size: 50px;
-            
-          }
-    
-          .fBook
-          {
+        }
+
+        .fBook {
             font-size: 50px;
-          }
-    
-        .logo
-        {
+        }
+
+        .logo {
             height: 80px;
             width: 120px;
-            cursor: pointer;
-            margin-right: auto;
-            cursor: default;
         }
-        .footerContact
-        {
+        .footerContact {
             font-size: 15px;
-            
-            .bold
-            {
+
+            .bold {
                 font-size: 20px;
             }
         }
-        .copyRight
-        {
+        .copyRight {
             font-size: 15px;
-            margin-top: 35px;
         }
-    
     }
-
-    }
+}

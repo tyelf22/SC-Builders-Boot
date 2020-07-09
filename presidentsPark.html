@@ -15,8 +15,8 @@
     <!-- *************** HEADER *************** -->
     <header>
         <a class="logo" href="index.html">
-            <img src="./images/scLogo.png" alt="SC Builders Logo">
-            </a>
+            <img src="./images/sportsCenterWhite.png" alt="SC Builders Logo">
+        </a>
         <nav>
             <ul class="navLinks">
                 <li><a href="presidentsPark.html">Presidents Park</a></li>
@@ -39,14 +39,68 @@
         <a href="#" class="cta"><button class="contactBtn">Contact</button></a>
     </header>
     <!-- *************** JumboTron *************** -->
-    <div class="container-fluid jumboTron">
-        <div class="container jumboText">
-            <h1>SC Builders, inc</h1>
+    <div class="container-fluid homeJumbo">
+        <div class="overlay">
+            <div class="homeJumboCont">
+                <div class="homeText">
+                    <h1>Sc Builders, inc</h1>
+                    <p>Trusted building partner for over 23 years</p>
+                    <button>SEE OUR WORK</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- *************** main *************** -->
-    <div class="mainCont">
-        
+    <div class="container-fluid homeCont">
+        <h2>Our Promise</h2>
+        <div class="row">
+            <!--icon information-->
+            <div class="col-12 col-lg-6 col-xl-5 order-1 order-lg-2 promiseCont">
+                <div class="row iconTop">
+                    <div class="col-12 col-sm-6 promiseCol">
+                        <i class="fas fa-calculator"></i>
+                        <h3>No Surprise Costs</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat tenetur.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 promiseCol">
+                        <i class="fas fa-tools"></i>
+                        <h3>Quality Guarantee</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat tenetur.</p>
+                    </div>
+                </div>
+                <div class="row iconBottom">
+                    <div class="col-12 col-sm-6 promiseCol">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Faster Build Times</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat tenetur.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 promiseCol">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>More Affordable</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat tenetur.</p>
+                    </div>
+                </div>
+            </div>
+            <!--promise image-->
+            <div class="col-12 col-lg-6 order-2 order-lg-1 col-xl-7 promiseImg">
+                <div class="blackBox ">
+                    <h3>23</h3>
+                    <p>Years Established</p>
+                </div>
+                <div class="redBox ">
+                    <h3>300+</h3>
+                    <p>Completed Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *************** Presidents Park *************** -->
+    <div class="container-fluid pPark">
+        <h2>Presidents Park</h2>
+        <div class="pParkImageContainer">
+            <div class="pImageOverlay"></div>
+            <h3>Explore Presidents Park<i class="fas fa-arrow-right"></i></h3>
+        </div>
     </div>
 
     <!-- *************** cards *************** -->
@@ -55,22 +109,63 @@
             <div class="card">
                 <img src="images/trevor.jpg" alt="SC Builders worker">
                 <h2>Testimonials</h2>
+                <hr></hr>
                 <p>Welcome to the SC builders website, enjoy your stay</p>
+                <p>Welcome to the SC builders website, enjoy your stay</p>
+                <a href="testimonials.html">
+                    <input type="button" value="LEARN MORE" class="button">
+                </a>
             </div>
             <div class="card">
                 <img src="images/trevor.jpg" alt="SC Builders worker">
                 <h2>Meet The Owners</h2>
                 <p>Welcome to the SC builders website, enjoy your stay</p>
+                <p>Welcome to the SC builders website, enjoy your stay</p>
+                <a href="meetTheOwners.html">
+                <input type="button" value="LEARN MORE" class="button">
+                </a>
             </div>
             <div class="card">
                 <img src="images/trevor.jpg" alt="SC Builders worker">
                 <h2>Past Projects</h2>
                 <p>Welcome to the SC builders website, enjoy your stay</p>
+                <p>Welcome to the SC builders website, enjoy your stay</p>
+                <a href="pastProjects.html">
+                    <input type="button" value="LEARN MORE" class="button">
+                </a>
             </div>
         </div>
     </div>
+    <!-- *************** FOOTER *************** -->
+    <footer class="container-fluid footer">
+        <div class="container">
+        <div class="row footerCards">
+            <div class="col-4">
+                <img src="./images/scLogo.png" alt="SC Builders Logo" class="logo text-center">
+            </div>
+            <div class="col-4 footerSocial text-center">
+                <a href="https://www.facebook.com/scbuilders01">
+                <i class="fab fa-facebook fBook"></i>
+                </a>
+                <a href="https://www.instagram.com/scbuilders01/"></i> <i class="fab fa-instagram insta"></i>
+                </a>
+                <div class="copyRight">&copy; 2020 SC Builders - All Rights Reserved</div>
+            </div>
+            <div class="col-4 footerContact text-center">
+                    <p class="bold">SC BUILDERS</p>
+                    <p>372 East Main St</p>
+                    <p>Grantsville, UT</p>
+                    <p>84029</p>
+                    <p>555-888-5245</p>
+                    <p>scbuilders@scbuilders.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
 
-    
+
+
     <!--Bootstrap Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
