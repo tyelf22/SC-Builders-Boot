@@ -1,13 +1,21 @@
-.about{
+//**************Main Content*****************
+.aboutBg{
+    background-image: url(../images/whiteKitchenCenteredC.jpg);
+}
 
-//**************INTRO BOXES*****************
-    .row1{
-        .aboutimage1{
-         height: 300px;
-         background-image: url(../images/aboutimage1.jpg);
+.about{
+    .aboutImageStyling{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 300px;
+
+    }
+
+    .row1{
+        .aboutimage1{
+         background-image: url(../images/aboutimage1.jpg);
+        
         }
         .text1{
             height: auto;
@@ -16,11 +24,7 @@
     }
     .row2{
         .aboutimage2{
-        height: 300px;
         background-image: url(../images/aboutimage2.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         } 
         .text2{
             margin-top: 70px;
@@ -31,11 +35,7 @@
     }
     .row3{
         .aboutimage3{
-        height: 300px;
         background-image: url(../images/aboutimage3.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         } 
         .text3{
             margin-top: 70px;
@@ -46,13 +46,7 @@
     }
 }
 
-//**************GET TO KNOW US TEXT*****************
 
-.getToKnowUs
-{
-    text-align: center;
-    margin: 100px 0px 70px 0px;
-}
 
 //**************Adjust for large screen*****************
 @media (min-width: 950px){

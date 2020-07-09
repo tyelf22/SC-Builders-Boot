@@ -1,15 +1,34 @@
-.agents{
-    .agentImage1{
-        border-radius: 100px;
-        height: 320px;
-        width: 265px;
-        margin-bottom: 70px;
-    }
-
-    .agentImage2{
-        border-radius: 100px;
+.agents {
+    .agentImage1 {
         height: 320px;
         width: 280px;
+        border-radius: 100%;
+    }
 
+    .agentImage2 {
+        border-radius: 100%;
+        height: 320px;
+        width: 280px;
+    }
+
+    .agentRow1 {
+        margin-bottom: 70px;
+        padding: 10px 0px;
+    }
+
+    .agent1Text {
+        border-left: solid red 2px;
+    }
+
+    .agent2Text {
+        border-left: solid red 2px;
+    }
+}
+
+@media (min-width: 950px) {
+    .agents {
+        .agentImage2 {
+            margin-right: 100px;
+        }
     }
 }
