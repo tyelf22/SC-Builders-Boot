@@ -1,77 +1,44 @@
 //**************GET TO KNOW US TEXT*****************
-    
-    .ownerGetToKnowUs
-    {
-        text-align: center;
-        margin: 40px 0px 25px 0px;
-    }
-    
-    .ownerContainer{
-            padding: 0;
-        
-        .ownerCards{
-                display: flex;
-                justify-content: space-evenly;
+.ownerContainer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
 
-                .ownerCard {
-                height: auto;
-                width: 350px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 10px;
+    .ownerCards {
+        display: block;
+        justify-content: space-evenly;
 
-                    .ownerName{
-                        margin-top: 40px;
-                    }
+        .ownerCard {
+            height: auto;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
 
-                    img {
-                    height: 200px;
-                    width: 300px;
-                    }
-                }
+            .ownerName {
+                margin-top: 40px;
+            }
 
-        }
-    }
-    
-    .ownerContainer {
-        display: flex;
-        justify-content: center;
-    
-        .ownerCards {
-            display: block;
-    
+            img {
+                height: 200px;
+                width: 300px;
             }
         }
-
-        .aboutBg 
-{
-    background-image: url(../images/lighted-beige-house-1396132.jpg);
+    }
 }
-    
-    
-//**************Media Query*****************
-    @media (min-width: 950px){
-        .ownerContainer {
-            display: block;
-    
-            .ownerCards {
-                display: flex;
-                }     
-        }
-    
-        .about
-        {
-            margin-top: 90px;
-            .row
-            {
-                margin-top: 60px;
-            }
-        }
-    }
 
-    .ownerGetToKnowUs
-    {
-        text-align: center;
-        margin: 60px 0px 35px 0px;
+.ownerBg {
+    background-image: url(../images/aboutbgC.jpg);
+}
+
+//**************Media Query*****************
+@media (min-width: 950px) {
+    .ownerContainer {
+        display: block;
+
+        .ownerCards {
+            display: flex;
+        }
     }
+}
