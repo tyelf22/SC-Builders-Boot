@@ -1,16 +1,9 @@
-# mod_rewrites starts here
+## hide .html extension
+# To externally redirect /dir/file.html to /dir/file
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=302,L,NE]
 
-# #RewriteEngine on
-
-# does not apply to existing directories, meaning that if the folder exists in the server then don't
-change anything and don't run the rule
-
-# #RewriteCond ${REQUEST_FILENAME} !-d
-
-#Check for file in directory with .html extension
-
-# #RewriteCond ${REQUEST_FILENAME}\.html -f
-
-#here we actually show the page that has the .html extension
-
-# #RewriteRule ^(.*)$ $1.html [NC,L]
+# To internally forward /dir/file to /dir/file.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1\.html -f [NC]
+RewriteRule ^(.+?)/?$ /$1.html [L]
