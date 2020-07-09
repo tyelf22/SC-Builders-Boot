@@ -1,7 +1,7 @@
 //Home Jumbo
 .homeJumbo {
     height: 600px;
-    background-image: url(../images/whiteKitchenCenteredC.jpg);
+    background-image: url(../images/homeBGLarge.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,8 +87,8 @@
     .promiseImg {
         position: relative;
         height: 500px;
-        background-image: url(../images/aboutbg.jpg);
-        background-position: top;
+        background-image: url(../images/homeFlower.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 0;
@@ -179,6 +179,7 @@
             font-size: 35px;
             cursor: pointer;
             transition: all 0.3s ease 0s;
+            color: white;
 
             &:hover{
                 font-size: 38px;
@@ -201,7 +202,7 @@
     .homeGalleryContainer {
         position: relative;
         height: 500px;
-        background-image: url("../images/houseWide.PNG");
+        background-image: url("../images/homeGallery.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
