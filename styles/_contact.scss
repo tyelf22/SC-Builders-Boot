@@ -1,5 +1,6 @@
 .contactBg{
-    background-image: url(../images/whiteKitchenCenteredC.jpg);
+    background-image: url(../images/contactbg.jpg);
+    background-position: center;
 }
 
 .contact
@@ -11,6 +12,7 @@
         border-left: solid red 2px;
         padding-left: 30px;
     }
+    
     .spacer
     {
         margin-bottom: 40px;
@@ -40,14 +42,14 @@
         height: 100px;
     }
 
-.contactButton
-    {
-        color: $primaryColor;
-        border-radius: 25px;
-        border: 2px solid $primaryColor;
-        padding: 5px 10px;
-        width:100px;
-        background: none;
+
+    .button {
+        color: black;
+
+        &:hover {
+            color: white;
+            border: 2px solid black;
+        }
     }
 } 
 
