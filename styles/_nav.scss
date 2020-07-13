@@ -39,19 +39,22 @@ header {
     }
 
 
-
     .navLinks {
         list-style: none;
+        
 
         li {
             display: inline-block;
             padding: 0px 20px;
+            
+            
             cursor: pointer;
             a {
                 padding: 0px 10px;
                 text-decoration: none;
                 transition: all 0.3s ease 0s;
                 color: white;
+                outline: 1 white;       
             }
             :hover{
                 border-bottom: 3px solid #FFFFFF;

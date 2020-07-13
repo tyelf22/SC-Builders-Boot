@@ -1,0 +1,90 @@
+//**************Main Content*****************
+.galleryBg{
+    background-image: url(../images/kitchenChairs.jpg);
+    margin-bottom: 0;
+}
+
+.galleryOptions{
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #dadada;
+    button{
+        border: none;
+        background:none;
+        margin: 0 3px;
+        outline: none;
+    }
+}
+
+.galleryImages{
+    .grid{
+        .cell{
+            margin: 1rem;
+            .responsiveImage {
+                max-width: 100%;
+                display: block;
+            }
+        }
+    }
+
+}
+
+
+//**************Adjust for large screen*****************
+@media (min-width: 540px){
+    //**************Main Content*****************
+    .galleryBg{
+    
+    }
+    
+    .galleryOptions{
+    
+        button{
+            margin: 0 2%;
+            font-size: 25px;
+        }
+    }
+
+
+    //**************gallery images*****************
+    .galleryImages{
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .cell{
+                width: calc(50% - 2rem);
+                .responsiveImage {
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 950px){
+    //**************Main Content*****************
+    .galleryBg{
+    
+    }
+    
+    .galleryOptions{
+    
+        button{
+            margin: 0 5%;
+        }
+    }
+
+
+    //**************gallery images*****************
+    .galleryImages{
+        .grid{
+            .cell{
+                width: calc(33.3333% - 2rem);
+                .responsiveImage {
+
+                }
+            }
+        }
+    }
+}
