@@ -56,30 +56,30 @@
     <div class="container filter">
         <div class="bedroom">
             <p>Bedrooms:</p>
-            <input type="button" value="Any" onclick="resetbed()" class="filterButton button1">
-            <input type="button" value="2" onclick="twobed()" class="filterButton">
-            <input type="button" value="3" onclick="threebed()" class="filterButton">
-            <input type="button" value="4" onclick="fourbed()" class="filterButton">
-            <input type="button" value="5 +" onclick="fivebed()" class="filterButton">
+            <input type="button" value="Any" id="bedAny" class="filterButton">
+            <input type="button" value="2" id="bedTwo" class="filterButton">
+            <input type="button" value="3" id="bedThree" class="filterButton">
+            <input type="button" value="4" id="bedFour" class="filterButton">
+            <input type="button" value="5 +" id="bedFive" class="filterButton">
         </div>
         <div class="bathroom">
             <p>Bathrooms</p>
-            <input type="button" value="Any" onclick="resetbath()" class="filterButton">
-            <input type="button" value="2" onclick="twobath()" class="filterButton">
-            <input type="button" value="3 +" onclick="threeplus()" class="filterButton">
+            <input type="button" value="Any" id="bathAny" class="filterButton">
+            <input type="button" value="2" id="bathTwo" class="filterButton">
+            <input type="button" value="3 +" id="bathThree" class="filterButton">
         </div>
         <div class="sqfeet">
             <p>SQ Feet</p>
-            <input type="button" value="Any" onclick="resetsqfeet()" class="filterButton">
-            <input type="button" value="< 1500" onclick="(sqfeet1500())" class="filterButton">
-            <input type="button" value="< 1500 - 1999" onclick="twobath()" class="filterButton">
-            <input type="button" value="< 2000 - 2499" onclick="twobath()" class="filterButton">
-            <input type="button" value="< 2500 - 2999" onclick="twobath()" class="filterButton">
+            <input type="button" value="Any" id="sfAny" class="filterButton">
+            <input type="button" value="< 1500" id="sfOne" class="filterButton">
+            <input type="button" value="< 1500 - 1999" id="sfTwo" class="filterButton">
+            <input type="button" value="< 2000 - 2499" id="sfThree" class="filterButton">
+            <input type="button" value="< 2500 - 2999" id="sfFour" class="filterButton">
         </div>
         
     </div>
 
-    <script>
+    <!-- <script>
 
         function resetbed()
 
@@ -301,7 +301,7 @@
             }
 
 
-    </script>
+    </script> -->
 
     <!-- *************** cards *************** -->
     <div class="container floorPlanContainer test">
@@ -465,6 +465,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script src="./main.js"></script>
+    <script src="./floorplans.js"></script>
     
 </body>
 </html>
