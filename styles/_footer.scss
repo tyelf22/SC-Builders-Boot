@@ -63,11 +63,13 @@
 }
 
 .copyright {
+    font-size: 12px;
     text-align: center;
     padding: 10px;
     background: #1C1C1C;
     color: white;
     letter-spacing: 1.3px;
+    
 }
 
 @media (min-width: 950px) {
@@ -75,7 +77,7 @@
         .footerCards{
             .footerContact{
                 .bold {
-                    font-size: 24px;
+                    font-size: 20px;
                 }
             }
         }
