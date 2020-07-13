@@ -1,0 +1,52 @@
+.floorPlanContainer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: $primaryBMargin;
+
+    .floorPlanCards {
+        // display: block;
+        // justify-content: space-evenly;
+
+        .floorPlanCard {
+            height: 500px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 6px 6px 6px grey;
+            margin: 10px;
+            border: 1px solid red;
+            h2 {
+        
+            }
+
+            img {
+                height: 200px;
+                width: 100%;
+
+            }
+        }
+
+        .floorPlansButton {
+            color: black;
+            width: 200px;
+            
+
+            &:hover {
+                color: white;
+                border: 2px solid black;
+            }
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    .floorPlanContainer {
+        display: block;
+
+        .floorPlanCards {
+            display: flex;
+        }
+    }
+}
