@@ -12,10 +12,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <!-- *************** HEADER *************** -->
+    <!-- *************** Header *************** -->
     <header>
         <a class="logo" href="index.html">
-            <img src="./images/scLogo.png" alt="SC Builders Logo">
+            <img src="./images/sportsCenterWhite.png" alt="SC Builders Logo">
         </a>
         <nav>
             <ul class="navLinks">
@@ -39,7 +39,7 @@
         <a href="#" class="cta"><button class="contactBtn">Contact</button></a>
     </header>
     <!-- *************** JumboTron *************** -->
-    <div class="container-fluid jumboBg aboutBg">
+    <div class="container-fluid jumboBg floorPlansBg">
         <div class="overlay">
             <div class="container box">
                 <h1>Floor Plans</h1>
@@ -52,88 +52,248 @@
         
     </div>
 
+    <!-- *************** Filter *************** -->
+    <div class="container filter">
+        <div class="bedroom">
+            <p>Bedrooms:</p>
+            <input type="button" value="Any" onclick="resetbed()" class="filterButton button1">
+            <input type="button" value="2" onclick="twobed()" class="filterButton">
+            <input type="button" value="3" onclick="threebed()" class="filterButton">
+            <input type="button" value="4" onclick="fourbed()" class="filterButton">
+            <input type="button" value="5 +" onclick="fivebed()" class="filterButton">
+        </div>
+        <div class="bathroom">
+            <p>Bathrooms</p>
+            <input type="button" value="Any" onclick="resetbath()" class="filterButton">
+            <input type="button" value="2" onclick="twobath()" class="filterButton">
+            <input type="button" value="3 +" onclick="threeplus()" class="filterButton">
+        </div>
+        <div class="sqfeet">
+            <p>SQ Feet</p>
+            <input type="button" value="Any" onclick="resetsqfeet()" class="filterButton">
+            <input type="button" value="< 1500" onclick="(sqfeet1500())" class="filterButton">
+            <input type="button" value="< 1500 - 1999" onclick="twobath()" class="filterButton">
+            <input type="button" value="< 2000 - 2499" onclick="twobath()" class="filterButton">
+            <input type="button" value="< 2500 - 2999" onclick="twobath()" class="filterButton">
+        </div>
+        
+    </div>
+
+    <script>
+
+        function resetbed()
+
+        {
+            document.querySelector(".twobed").style.display = "block"
+            document.querySelector(".threebed").style.display = "block"
+            document.querySelector(".fourbed").style.display = "block"
+            document.querySelector(".fivebed").style.display = "block"
+        }
+
+        function twobed()
+        {
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "block"
+                console.log(two)
+            })
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "block"
+                console.log(two)
+            })
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "block"
+                console.log(two)
+            })
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "block"
+                console.log(two)
+            })
+            document.querySelector(".threebed").style.display = "none"
+            document.querySelector(".fourbed").style.display = "none"
+            document.querySelector(".fivebed").style.display = "none"
+        }
+
+        function threebed()
+        {
+            document.querySelector(".twobed").style.display = "none"
+            document.querySelector(".threebed").style.display = "block"
+            document.querySelector(".fourbed").style.display = "none"
+            document.querySelector(".fivebed").style.display = "none"
+        }
+
+        function fourbed()
+        {
+            document.querySelector(".twobed").style.display = "none"
+            document.querySelector(".threebed").style.display = "none"
+            document.querySelector(".fourbed").style.display = "block"
+            document.querySelector(".fivebed").style.display = "none"
+        }
+
+        function fivebed()
+        {
+            document.querySelector(".twobed").style.display = "none"
+            document.querySelector(".threebed").style.display = "none"
+            document.querySelector(".fourbed").style.display = "none"
+            document.querySelector(".fivebed").style.display = "block"
+        }
+
+        
+        function resetbath()
+        {
+            document.getElementById("washington").style.display = "none"
+        }
+
+        function twobath()
+        {
+            document.getElementById("washington").style.display = "none"
+        }
+
+        function threeplus()
+        {
+            document.getElementById("washington").style.display = "none"
+        }
+
+    
+        function sqfeet1500()
+        {
+            document.getElementById("adams").style.display = "none"
+        }
+
+        function resetsqfeet()
+
+        {
+            document.getElementById("adams").style.display = "block"
+        }
+
+
+    </script>
+
     <!-- *************** cards *************** -->
-    <div class="container floorPlanContainer">
+    <div class="container floorPlanContainer test">
         <div class="floorPlanCards">
-            <div class="floorPlanCard">
+            <div class="floorPlanCard lincoln threebed twobath sqft1500-1999">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-                <br><br><br>
-                <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                <div class="floorPlanText ">
+                    <h2>Lincoln</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 3 Bath: 2 SQ ft 1800</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+               
             </div>
-            <div class="floorPlanCard">
+            <div class="floorPlanCard washington fourbed threebath sqft2000-2499">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
+                <div class="floorPlanText">
+                    <h2>Washington</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 4 Bath: 3 SQ ft 2000</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+              
             </div>
-            <div class="floorPlanCard">
+            <div class="floorPlanCard adams twobed onebath sqft2500-2999">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
+                <div class="floorPlanText">
+                    <h2>Adams</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 2 Bath: 1 SQ ft 2900</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+
+
+            <div class="floorPlanCard jefferson threebed twobath sqft1500-1999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Jefferson</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 3 Bath: 2 SQ ft 1500</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+            <div class="floorPlanCard trump fivebed threebath sqft2500-2999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Trump</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 5 Bath: 3 SQ ft 2950</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+            <div class="floorPlanCard reagan threebed twobath sqft1500-1999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Reagan</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 3 Bath: 2 SQ ft 1900</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+
+
+            <div class="floorPlanCard harrison twobed threebath sqft2000-2499">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Harrison</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 2 Bath: 3 SQ ft 2300</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+            <div class="floorPlanCard kennedy threebed threebath sqft1500-1999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Kennedy</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 3 Bath: 3 SQ ft 1500</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+            <div class="floorPlanCard bush twobed threebath sqft1500-1999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Bush</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 2 Bath: 3 SQ ft 1600</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+
+
+            <div class="floorPlanCard roosevelt threebed twobath sqft1500-1999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Roosevelt</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 3 Bath: 2 SQ ft 1500</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+            <div class="floorPlanCard truman twobed twobath sqft1500-1999">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Truman</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 2 Bath: 2 SQ ft 1500</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
+            </div>
+            <div class="floorPlanCard nixon fourbed threebath sqft2000-2499">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Nixon</h2>
+                    <p class="grayShade">Style: Single Story</p>
+                    <p>Bed: 4 Bath: 3 SQ ft 2000</p>
+                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container floorPlanContainer">
-        <div class="floorPlanCards">
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container floorPlanContainer">
-        <div class="floorPlanCards">
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container floorPlanContainer">
-        <div class="floorPlanCards">
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-            <div class="floorPlanCard">
-                <img src="images/homeRendering.jpg" alt="SC Builders worker">
-                <h2>Lincoln</h2>
-                <p>Style: Single Story</p>
-            </div>
-        </div>
-    </div>
 
         <!-- *************** FOOTER *************** -->
         <footer class="container-fluid footer">
@@ -174,5 +334,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script src="./main.js"></script>
+    
 </body>
 </html>

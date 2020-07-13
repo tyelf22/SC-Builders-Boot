@@ -1,25 +1,65 @@
+.filter{
+    display: block;
+    margin-bottom: 30px;
+
+    .bedroom
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .bathroom{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sqfeet{
+        text-align: center;
+    }
+
+    .filterButton{
+        padding:10px
+    }
+}
+
+.floorPlansBg{
+    background-image: url(../images/floorPlansBg.jpg);
+}
+
 .floorPlanContainer {
     padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: $primaryBMargin;
+    
 
     .floorPlanCards {
         // display: block;
         // justify-content: space-evenly;
+        justify-content: center;
 
         .floorPlanCard {
-            height: 500px;
+            height: auto;
             width: 350px;
             display: flex;
             flex-direction: column;
             box-shadow: 6px 6px 6px grey;
             margin: 10px;
-            border: 1px solid red;
-            h2 {
-        
+            padding-bottom: 20px;
+            
+            .floorPlanText{
+                padding-left: 10px;
             }
+
+            .grayShade{
+            background-color: #dadada;
+            width: 150px;
+            text-align: center;
+            opacity: 100%;
+            }
+
+            
 
             img {
                 height: 200px;
@@ -47,6 +87,31 @@
 
         .floorPlanCards {
             display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .filter{
+        display: flex;
+        margin-bottom: 30px;
+    
+        .bedroom
+        {
+            margin-right: 100px;
+            text-align: center;
+        }
+        
+        .bathroom{
+            margin-right: 100px;
+            text-align: center;
+        }
+    
+        .sqfeet{
+            text-align: center;
+        }
+    
+        .filterButton{
+            padding:10px
         }
     }
 }
