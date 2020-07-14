@@ -70,7 +70,7 @@ let sfFourBtn = document.querySelector('#sfFour').addEventListener('click', () =
 });
 
 
-const presidents = [
+const aoPresidents = [
     {
         name: 'Lincoln',
         style: 'ss',

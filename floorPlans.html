@@ -85,90 +85,221 @@
         function resetbed()
 
         {
-            document.querySelector(".twobed").style.display = "block"
-            document.querySelector(".threebed").style.display = "block"
-            document.querySelector(".fourbed").style.display = "block"
-            document.querySelector(".fivebed").style.display = "block"
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "block"
+                console.log(two)
+            })
+            let threebed = document.querySelectorAll(".threebed")
+            threebed.forEach(three => {
+                three.style.display = "block"
+                console.log(three)
+            })
+            let fourbed = document.querySelectorAll(".fourbed")
+            fourbed.forEach(four => {
+                four.style.display = "block"
+                console.log(four)
+            })
+            let fivebed = document.querySelectorAll(".fivebed")
+            fivebed.forEach(five => {
+                five.style.display = "block"
+                console.log(five)
+            })
         }
 
         function twobed()
         {
             let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
+            twobed.forEach(two => { if(two.style.display == "none"){
+
+            }
+
+            else{
                 two.style.display = "block"
-                console.log(two)
+            }
+
             })
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
-                two.style.display = "block"
-                console.log(two)
+            let threebed = document.querySelectorAll(".threebed")
+            threebed.forEach(three => {
+                three.style.display = "none"
+                console.log(three)
             })
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
-                two.style.display = "block"
-                console.log(two)
+            let fourbed = document.querySelectorAll(".fourbed")
+            fourbed.forEach(four => {
+                four.style.display = "none"
+                console.log(four)
             })
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
-                two.style.display = "block"
-                console.log(two)
+            let fivebed = document.querySelectorAll(".fivebed")
+            fivebed.forEach(five => {
+                five.style.display = "none"
+                console.log(five)
             })
-            document.querySelector(".threebed").style.display = "none"
-            document.querySelector(".fourbed").style.display = "none"
-            document.querySelector(".fivebed").style.display = "none"
         }
 
         function threebed()
-        {
-            document.querySelector(".twobed").style.display = "none"
-            document.querySelector(".threebed").style.display = "block"
-            document.querySelector(".fourbed").style.display = "none"
-            document.querySelector(".fivebed").style.display = "none"
-        }
+            {
+                let twobed = document.querySelectorAll(".twobed")
+                twobed.forEach(two => {
+                    two.style.display = "none"
+                    console.log(two)
+                })
+                let threebed = document.querySelectorAll(".threebed")
+                threebed.forEach(three => {
+                    three.style.display = "block"
+                    console.log(three)
+                })
+                let fourbed = document.querySelectorAll(".fourbed")
+                fourbed.forEach(four => {
+                    four.style.display = "none"
+                    console.log(four)
+                })
+                let fivebed = document.querySelectorAll(".fivebed")
+                fivebed.forEach(five => {
+                    five.style.display = "none"
+                    console.log(five)
+                })
+            }
 
         function fourbed()
         {
-            document.querySelector(".twobed").style.display = "none"
-            document.querySelector(".threebed").style.display = "none"
-            document.querySelector(".fourbed").style.display = "block"
-            document.querySelector(".fivebed").style.display = "none"
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "none"
+                console.log(two)
+            })
+            let threebed = document.querySelectorAll(".threebed")
+            threebed.forEach(three => {
+                three.style.display = "none"
+                console.log(three)
+            })
+            let fourbed = document.querySelectorAll(".fourbed")
+            fourbed.forEach(four => {
+                four.style.display = "block"
+                console.log(four)
+            })
+            let fivebed = document.querySelectorAll(".fivebed")
+            fivebed.forEach(five => {
+                five.style.display = "none"
+                console.log(five)
+            })
         }
 
         function fivebed()
         {
-            document.querySelector(".twobed").style.display = "none"
-            document.querySelector(".threebed").style.display = "none"
-            document.querySelector(".fourbed").style.display = "none"
-            document.querySelector(".fivebed").style.display = "block"
+            let twobed = document.querySelectorAll(".twobed")
+            twobed.forEach(two => {
+                two.style.display = "none"
+                console.log(two)
+            })
+            let threebed = document.querySelectorAll(".threebed")
+            threebed.forEach(three => {
+                three.style.display = "none"
+                console.log(three)
+            })
+            let fourbed = document.querySelectorAll(".fourbed")
+            fourbed.forEach(four => {
+                four.style.display = "none"
+                console.log(four)
+            })
+            let fivebed = document.querySelectorAll(".fivebed")
+            fivebed.forEach(five => {
+                five.style.display = "block"
+                console.log(five)
+            })
         }
 
         
         function resetbath()
         {
-            document.getElementById("washington").style.display = "none"
-        }
+                let twobath = document.querySelectorAll(".twobath")
+                twobath.forEach(two => {
+                    two.style.display = "block"
+                    console.log(two)
+                })
+                let threebath = document.querySelectorAll(".threebath")
+                threebath.forEach(three => {
+                    three.style.display = "block"
+                    console.log(three)
+                })
+            }
 
         function twobath()
         {
-            document.getElementById("washington").style.display = "none"
-        }
+                let twobath = document.querySelectorAll(".twobath")
+                twobath.forEach(two => {
+                    two.style.display = "block"
+                    console.log(two)
+                })
+                let threebath = document.querySelectorAll(".threebath")
+                threebath.forEach(three => {
+                    three.style.display = "none"
+                    console.log(three)
+                })
+            }
 
         function threeplus()
         {
-            document.getElementById("washington").style.display = "none"
-        }
+                let twobath = document.querySelectorAll(".twobath")
+                twobath.forEach(two => {
+                    two.style.display = "none"
+                    console.log(two)
+                })
+                let threebath = document.querySelectorAll(".threebath")
+                threebath.forEach(three => {
+                    three.style.display = "block"
+                    console.log(three)
+                })
+            }
 
     
         function sqfeet1500()
         {
-            document.getElementById("adams").style.display = "none"
-        }
+                let twobath = document.querySelectorAll(".twobath")
+                twobath.forEach(two => {
+                    two.style.display = "none"
+                    console.log(two)
+                })
+                let threebath = document.querySelectorAll(".threebath")
+                threebath.forEach(three => {
+                    three.style.display = "none"
+                    console.log(three)
+                })
+                let fourbath = document.querySelectorAll(".fourbath")
+                fourbath.forEach(four => {
+                    four.style.display = "none"
+                    console.log(four)
+                })
+                let fivebath = document.querySelectorAll(".fivebath")
+                fivebath.forEach(five => {
+                    five.style.display = "none"
+                    console.log(five)
+                })
+            }
 
         function resetsqfeet()
 
         {
-            document.getElementById("adams").style.display = "block"
-        }
+                let twobath = document.querySelectorAll(".twobath")
+                twobath.forEach(two => {
+                    two.style.display = "block"
+                    console.log(two)
+                })
+                let threebath = document.querySelectorAll(".threebath")
+                threebath.forEach(three => {
+                    three.style.display = "none"
+                    console.log(three)
+                })
+                let fourbath = document.querySelectorAll(".fourbath")
+                fourbath.forEach(four => {
+                    four.style.display = "none"
+                    console.log(four)
+                })
+                let fivebath = document.querySelectorAll(".fivebath")
+                fivebath.forEach(five => {
+                    five.style.display = "none"
+                    console.log(five)
+                })
+            }
 
 
     </script> -->
@@ -196,12 +327,12 @@
                 </div>
               
             </div>
-            <div class="floorPlanCard adams twobed onebath sqft2500-2999">
+            <div class="floorPlanCard adams twobed twobath sqft2500-2999">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Adams</h2>
                     <p class="grayShade">Style: Single Story</p>
-                    <p>Bed: 2 Bath: 1 SQ ft 2900</p>
+                    <p>Bed: 2 Bath: 2 SQ ft 2900</p>
                     <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
