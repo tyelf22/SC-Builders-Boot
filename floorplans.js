@@ -22,7 +22,7 @@ let sfFourBtn = document.querySelector('#sfFour');
 
 
 
-const presidents = [
+const aoPresidents = [
     {
         name: 'Lincoln',
         style: 'ss',
@@ -111,12 +111,7 @@ const presidents = [
 ]
 
 
-const result = presidents.filter(pres => {
-    pres.style = 'ss'
-    pres.bed = 2
-    pres.bath = 2
-    pres.sf = 1500
-});
+
 
 
 
