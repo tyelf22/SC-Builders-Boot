@@ -47,380 +47,191 @@
             </div>
         </div>
     </div>
-    <!-- *************** main *************** -->
-    <div class="mainCont">
-        
-    </div>
+
 
     <!-- *************** Filter *************** -->
     <div class="container filter">
-        <div class="bedroom">
-            <p>Bedrooms:</p>
-            <input type="button" value="Any" id="bedAny" class="filterButton">
-            <input type="button" value="2" id="bedTwo" class="filterButton">
-            <input type="button" value="3" id="bedThree" class="filterButton">
-            <input type="button" value="4" id="bedFour" class="filterButton">
-            <input type="button" value="5 +" id="bedFive" class="filterButton">
+        <div class="row">
+            <div class="col-12 col-lg-6 bedroom">
+                <h2>Bedrooms</h2>
+                <input type="button" value="Any" id="bedAny" class="filterButton">
+                <input type="button" value="2" id="bedTwo" class="filterButton">
+                <input type="button" value="3" id="bedThree" class="filterButton">
+                <input type="button" value="4" id="bedFour" class="filterButton">
+                <input type="button" value="5 +" id="bedFive" class="filterButton">
+            </div>
+            <div class="col-12 col-lg-6 bathroom">
+                <h2>Bathrooms</h2>
+                <input type="button" value="Any" id="bathAny" class="filterButton">
+                <input type="button" value="1" id="bathOne" class="filterButton">
+                <input type="button" value="2" id="bathTwo" class="filterButton">
+                <input type="button" value="3 +" id="bathThree" class="filterButton">
+            </div>
         </div>
-        <div class="bathroom">
-            <p>Bathrooms</p>
-            <input type="button" value="Any" id="bathAny" class="filterButton">
-            <input type="button" value="1" id="bathOne" class="filterButton">
-            <input type="button" value="2" id="bathTwo" class="filterButton">
-            <input type="button" value="3 +" id="bathThree" class="filterButton">
-        </div>
-        <div class="sqfeet">
-            <p>SQ Feet</p>
-            <input type="button" value="Any" id="sfAny" class="filterButton">
-            <input type="button" value="< 1500" id="sfOne" class="filterButton">
-            <input type="button" value="< 1500 - 1999" id="sfTwo" class="filterButton">
-            <input type="button" value="< 2000 - 2499" id="sfThree" class="filterButton">
-            <input type="button" value="< 2500 - 2999" id="sfFour" class="filterButton">
-        </div>
-        
+        <!-- <div class="row">
+            <div class="col-12 sqfeet">
+                <h2>SQ Feet</h2>
+                <input type="button" value="Any" id="sfAny" class="filterButton">
+                <input type="button" value="< 1500" id="sfOne" class="filterButton">
+                <input type="button" value="< 1500 - 1999" id="sfTwo" class="filterButton">
+                <input type="button" value="< 2000 - 2499" id="sfThree" class="filterButton">
+                <input type="button" value="< 2500 - 2999" id="sfFour" class="filterButton">
+            </div>
+        </div>    -->
     </div>
 
-    <!-- <script>
-
-        function resetbed()
-
-        {
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
-                two.style.display = "block"
-                console.log(two)
-            })
-            let threebed = document.querySelectorAll(".threebed")
-            threebed.forEach(three => {
-                three.style.display = "block"
-                console.log(three)
-            })
-            let fourbed = document.querySelectorAll(".fourbed")
-            fourbed.forEach(four => {
-                four.style.display = "block"
-                console.log(four)
-            })
-            let fivebed = document.querySelectorAll(".fivebed")
-            fivebed.forEach(five => {
-                five.style.display = "block"
-                console.log(five)
-            })
-        }
-
-        function twobed()
-        {
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => { if(two.style.display == "none"){
-
-            }
-
-            else{
-                two.style.display = "block"
-            }
-
-            })
-            let threebed = document.querySelectorAll(".threebed")
-            threebed.forEach(three => {
-                three.style.display = "none"
-                console.log(three)
-            })
-            let fourbed = document.querySelectorAll(".fourbed")
-            fourbed.forEach(four => {
-                four.style.display = "none"
-                console.log(four)
-            })
-            let fivebed = document.querySelectorAll(".fivebed")
-            fivebed.forEach(five => {
-                five.style.display = "none"
-                console.log(five)
-            })
-        }
-
-        function threebed()
-            {
-                let twobed = document.querySelectorAll(".twobed")
-                twobed.forEach(two => {
-                    two.style.display = "none"
-                    console.log(two)
-                })
-                let threebed = document.querySelectorAll(".threebed")
-                threebed.forEach(three => {
-                    three.style.display = "block"
-                    console.log(three)
-                })
-                let fourbed = document.querySelectorAll(".fourbed")
-                fourbed.forEach(four => {
-                    four.style.display = "none"
-                    console.log(four)
-                })
-                let fivebed = document.querySelectorAll(".fivebed")
-                fivebed.forEach(five => {
-                    five.style.display = "none"
-                    console.log(five)
-                })
-            }
-
-        function fourbed()
-        {
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
-                two.style.display = "none"
-                console.log(two)
-            })
-            let threebed = document.querySelectorAll(".threebed")
-            threebed.forEach(three => {
-                three.style.display = "none"
-                console.log(three)
-            })
-            let fourbed = document.querySelectorAll(".fourbed")
-            fourbed.forEach(four => {
-                four.style.display = "block"
-                console.log(four)
-            })
-            let fivebed = document.querySelectorAll(".fivebed")
-            fivebed.forEach(five => {
-                five.style.display = "none"
-                console.log(five)
-            })
-        }
-
-        function fivebed()
-        {
-            let twobed = document.querySelectorAll(".twobed")
-            twobed.forEach(two => {
-                two.style.display = "none"
-                console.log(two)
-            })
-            let threebed = document.querySelectorAll(".threebed")
-            threebed.forEach(three => {
-                three.style.display = "none"
-                console.log(three)
-            })
-            let fourbed = document.querySelectorAll(".fourbed")
-            fourbed.forEach(four => {
-                four.style.display = "none"
-                console.log(four)
-            })
-            let fivebed = document.querySelectorAll(".fivebed")
-            fivebed.forEach(five => {
-                five.style.display = "block"
-                console.log(five)
-            })
-        }
-
-        
-        function resetbath()
-        {
-                let twobath = document.querySelectorAll(".twobath")
-                twobath.forEach(two => {
-                    two.style.display = "block"
-                    console.log(two)
-                })
-                let threebath = document.querySelectorAll(".threebath")
-                threebath.forEach(three => {
-                    three.style.display = "block"
-                    console.log(three)
-                })
-            }
-
-        function twobath()
-        {
-                let twobath = document.querySelectorAll(".twobath")
-                twobath.forEach(two => {
-                    two.style.display = "block"
-                    console.log(two)
-                })
-                let threebath = document.querySelectorAll(".threebath")
-                threebath.forEach(three => {
-                    three.style.display = "none"
-                    console.log(three)
-                })
-            }
-
-        function threeplus()
-        {
-                let twobath = document.querySelectorAll(".twobath")
-                twobath.forEach(two => {
-                    two.style.display = "none"
-                    console.log(two)
-                })
-                let threebath = document.querySelectorAll(".threebath")
-                threebath.forEach(three => {
-                    three.style.display = "block"
-                    console.log(three)
-                })
-            }
-
-    
-        function sqfeet1500()
-        {
-                let twobath = document.querySelectorAll(".twobath")
-                twobath.forEach(two => {
-                    two.style.display = "none"
-                    console.log(two)
-                })
-                let threebath = document.querySelectorAll(".threebath")
-                threebath.forEach(three => {
-                    three.style.display = "none"
-                    console.log(three)
-                })
-                let fourbath = document.querySelectorAll(".fourbath")
-                fourbath.forEach(four => {
-                    four.style.display = "none"
-                    console.log(four)
-                })
-                let fivebath = document.querySelectorAll(".fivebath")
-                fivebath.forEach(five => {
-                    five.style.display = "none"
-                    console.log(five)
-                })
-            }
-
-        function resetsqfeet()
-
-        {
-                let twobath = document.querySelectorAll(".twobath")
-                twobath.forEach(two => {
-                    two.style.display = "block"
-                    console.log(two)
-                })
-                let threebath = document.querySelectorAll(".threebath")
-                threebath.forEach(three => {
-                    three.style.display = "none"
-                    console.log(three)
-                })
-                let fourbath = document.querySelectorAll(".fourbath")
-                fourbath.forEach(four => {
-                    four.style.display = "none"
-                    console.log(four)
-                })
-                let fivebath = document.querySelectorAll(".fivebath")
-                fivebath.forEach(five => {
-                    five.style.display = "none"
-                    console.log(five)
-                })
-            }
+        <!-- *************** Modal ***************  -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="container">
+                    <h2 id="nameTag"></h2>
+                    <hr>
+                    <img class="modalImg" src="" alt="SC Builders floorplan image">
+                    <div class="row specs">
+                        <div class="col-4 text-center">
+                            <h3>Beds: </h3>
+                            <h3 id="bedTag"></h3>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h3>Baths: </h3>
+                            <h3 id="bathTag"></h3>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h3>Sqft: </h3>
+                            <h3 id="sfTag"></h3>
+                        </div>
+                    </div>
 
 
-    </script> -->
+                </div>
+                <!-- <h3>Floorplan:</h3>
+                <p id="nameTag"></p>
+                <h3>Bedroom:</h3>
+                <p id="ageTag"></p>
+                <h3>Bathroom:</h3>
+                <p id="heightTag"></p> -->
+            </div>
+        </div>
 
     <!-- *************** cards *************** -->
     <div class="container floorPlanContainer test">
         <div class="floorPlanCards">
-            <div class="floorPlanCard lincoln threebed twobath sqft1500-1999">
+            <div class="floorPlanCard lincoln">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText ">
                     <h2>Lincoln</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1800</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="lincolnBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
                
             </div>
-            <div class="floorPlanCard washington fourbed threebath sqft2000-2499">
+            <div class="floorPlanCard washington">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Washington</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2000</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="washingtonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
               
             </div>
-            <div class="floorPlanCard adams twobed twobath sqft2500-2999">
+            <div class="floorPlanCard adams">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Adams</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 2 Bath: 2 SQ ft 2900</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="adamsBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
 
 
-            <div class="floorPlanCard jefferson threebed twobath sqft1500-1999">
+            <div class="floorPlanCard jefferson">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Jefferson</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="jeffersonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
-            <div class="floorPlanCard trump fivebed threebath sqft2500-2999">
+            <div class="floorPlanCard trump">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Trump</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 5 Bath: 3 SQ ft 2950</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="trumpBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
-            <div class="floorPlanCard reagan threebed twobath sqft1500-1999">
+            <div class="floorPlanCard reagan">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Reagan</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1900</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="reaganBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
 
 
-            <div class="floorPlanCard harrison twobed threebath sqft2000-2499">
+            <div class="floorPlanCard harrison">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Harrison</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 2 Bath: 3 SQ ft 2300</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="harrisonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
-            <div class="floorPlanCard kennedy threebed threebath sqft1500-1999">
+            <div class="floorPlanCard kennedy">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Kennedy</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 3 Bath: 3 SQ ft 1500</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="kennedyBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
-            <div class="floorPlanCard bush twobed threebath sqft1500-1999">
+            <div class="floorPlanCard bush">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Bush</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 2 Bath: 3 SQ ft 1600</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="bushBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
 
 
-            <div class="floorPlanCard roosevelt threebed twobath sqft1500-1999">
+            <div class="floorPlanCard roosevelt">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Roosevelt</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="rooseveltBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
-            <div class="floorPlanCard truman twobed twobath sqft1500-1999">
+            <div class="floorPlanCard truman">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Truman</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 2 Bath: 2 SQ ft 1500</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="trumanBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
-            <div class="floorPlanCard nixon fourbed threebath sqft2000-2499">
+            <div class="floorPlanCard nixon">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Nixon</h2>
                     <p class="grayShade">Style: Single Story</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2000</p>
-                    <input type="button" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <input type="button" id="nixonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>
         </div>
