@@ -1,66 +1,25 @@
-/* HEADER  */
-console.log('connected')
-let navBtn = document.querySelector(".checkBtn")
-let navBtnTwo = document.querySelector(".checkBtnTwo")
-let contactBtn = document.querySelector(".contactBtn")
-
-let links = document.querySelector(".navLinks")
-
-//resizing window determines nav items to display
-window.addEventListener('resize', function(event){
-    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewportWidth > 950) {
-        console.log('Wide viewport');
-        navBtn.style.display = 'none'
-        navBtnTwo.style.display = 'none'
-    } else {
-        navBtn.style.display = 'block'
-        navBtnTwo.style.display = 'none'
-        links.style.left = "-100%"
-        contactBtn.style.left = "-100%"
-
-    }
-  });
-
-
-navBtn.addEventListener('click', () => {
-    console.log("clicked")
-    navBtn.style.display = "none"
-    navBtnTwo.style.display = "block"
-
-    links.style.left = "0"
-    contactBtn.style.left = "50%"
-    
-})
-
-navBtnTwo.addEventListener('click', () => {
-    console.log("clickedExit")
-    navBtn.style.display = "block"
-    navBtnTwo.style.display = "none"
-
-    links.style.left = "-100%"
-    contactBtn.style.left = "-100%"
-
-})
+(function($) { // Begin jQuery
+    $(function() { // DOM ready
+      // If a link has a dropdown, add sub menu toggle.
+      $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        // Close one dropdown when selecting another
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+      // Clicking away from dropdown will remove the dropdown class
+      $('html').click(function() {
+        $('.nav-dropdown').hide();
+      });
+      // Toggle open and close nav styles on click
+      $('#nav-toggle').click(function() {
+        $('nav ul').slideToggle();
+      });
+      // Hamburger to X toggle
+      $('#nav-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+    }); // end DOM ready
+  })(jQuery); // end jQuery
 
 
-document.getElementById("name").focus();
-
-
-//NAV BAR
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
