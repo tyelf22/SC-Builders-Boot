@@ -73,21 +73,20 @@
     margin-bottom: 50px;
 }
 
-
+.circle{
+    border-radius: 100px;
+    background: $primaryColor;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 
 .circles{
     margin-bottom: $primaryBMargin;
 
     .icons{
-        font-size: 60px;
+        font-size: 70px;
         color: white;
-    }
-
-    .circle{
-        border-radius: 100px;
-        background: $primaryColor;
-        height: 110px;
-        width: 110px;
-        margin: 10px auto;
     }
 }
