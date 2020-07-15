@@ -1,11 +1,11 @@
 .filter{
+    display: block;
     margin-bottom: 30px;
 
     .bedroom
     {
         text-align: center;
         margin-bottom: 50px;
-        width: 100%;
     }
     
     .bathroom{
@@ -18,84 +18,12 @@
     }
 
     .filterButton{
-        // border-radius: 50px;
-        padding: 5px 20px;
-        margin: 2px 0;
-        background: none;
-        border: 2px solid black;
-        border-radius: 50px;
-        color: black;
-        transition: all 0.3s ease 0s;
-        
-        
-        &:hover{
-            background: $primaryColor;
-            color: white;
-            border: 2px solid red;
-        }
+        padding:10px
     }
 }
 
 .floorPlansBg{
     background-image: url(../images/floorPlansBg.jpg);
-}
-
-/* Modal Styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 30% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 100%; /* Could be more or less, depending on screen size */
-
-        .specs{
-            margin-top: 10px;
-            h3 {
-                display: inline-block;
-            }
-        }
-
-
-
-        .modalImg {
-            width: 100%;
-            max-width: 950px;
-            height: auto;
-
-            display: block;
-            margin: 0 auto;
-        }
-
-
-        .close {
-            color: #aaa;
-            text-align: right;
-            font-size: 28px;
-            font-weight: bold;
-
-            &:hover, &:focus{
-                color: black;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-        }
-
-
-    }
 }
 
 .floorPlanContainer {
@@ -107,7 +35,8 @@
     
 
     .floorPlanCards {
-
+        // display: block;
+        // justify-content: space-evenly;
         justify-content: center;
 
         .floorPlanCard {
@@ -141,8 +70,9 @@
 
         .floorPlansButton {
             color: black;
-            padding: 3px 10px;
+            width: 200px;
             
+
             &:hover {
                 color: white;
                 border: 2px solid black;
@@ -151,23 +81,10 @@
     }
 }
 
-@media (min-width: 800px) {
-
-    /* Modal Styles */
-.modal {
-
-    .modal-content {
-        margin: 5% auto; /* 15% from the top and centered */
-        width: 80%; /* Could be more or less, depending on screen size */
-    }   
-    
-}
-
-}
-
 @media (min-width: 950px) {
     .floorPlanContainer {
-        
+        display: block;
+
         .floorPlanCards {
             display: flex;
             flex-wrap: wrap;
@@ -175,8 +92,26 @@
     }
 
     .filter{
-        // display: flex;
-        margin-bottom: 10px;
+        display: flex;
+        margin-bottom: 30px;
     
+        .bedroom
+        {
+            margin-right: 100px;
+            text-align: center;
+        }
+        
+        .bathroom{
+            margin-right: 100px;
+            text-align: center;
+        }
+    
+        .sqfeet{
+            text-align: center;
+        }
+    
+        .filterButton{
+            padding:10px
+        }
     }
 }

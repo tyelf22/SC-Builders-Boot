@@ -82,6 +82,7 @@ sfAnyBtn.addEventListener('click', () => {
     numSf = false
     sfChangeColor(sfAnyBtn)
     ourFilter(numBeds, numBaths, numSf)
+    
 });
 let sfOneBtn = document.querySelector('#sfOne')
 sfOneBtn.addEventListener('click', () => {
