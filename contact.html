@@ -12,32 +12,58 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-   <!-- *************** HEADER *************** -->
-   <header>
-    <a class="logo" href="index.html">
-        <img src="./images/sportsCenterWhite.png" alt="SC Builders Logo">
-    </a>
-    <nav>
-        <ul class="navLinks">
-            <li><a href="presidentsPark.html">Presidents Park</a></li>
-            <li><a href="floorPlans.html">Floorplans</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="more.html">More</a></li>
-        </ul>
-    </nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkBtn">
-        <i class="fas fa-bars"></i>
-    </label>
-
-    <input type="checkbox" id="checkTwo">
-    <label for="checkTwo" class="checkBtnTwo">
-        <i class="fas fa-times"></i>
-    </label>
-    
-    <a href="#" class="cta"><button class="contactBtn">Contact</button></a>
-</header>
+    <!-- *************** NAV BAR *************** -->
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="./index.html">
+                <img src="./images/sportsCenterWhite.png" class="dropDownLogo" alt="">
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="./presidentsPark.html">Presidents Park</a>
+                    </li>
+                    <li>
+                        <a href="./floorPlans.html">Floor Plans</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="./contact.html">Contact</a>
+                  </li>
+                    <li>
+                        <a href="#!">More</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./testimonials.html">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="./meetTheOwners.html">Meet The Owners</a>
+                            </li>
+                            <li>
+                                <a href="./gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                              <a href="./pastProjects.html">Past Projects</a>
+                          </li>
+                          <li>
+                            <a href="./meetTheAgents.html">Meet The Agents</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li>
+                      <a class="callNow" href="tel:4358417309">Call Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <!-- *************** JumboTron *************** -->
     <div class="container-fluid jumboBg contactBg">
         <div class="overlay">
@@ -55,17 +81,17 @@
         <div class="row row1">
             <div class="col-12 order-1 order-lg-1 col-lg-6 d-flex flex-column align-items-center border-right spacer">
                 <div class="text-left ">
-                    <div class="">
+                    <div class="verticalBorder">
                         <h1>Mike Colson</h1>
                         <p>435-241-0182</p>
                         <p>mike@sc.builders</p>
                     </div>
-                    <div class=" ">
+                    <div class="verticalBorder ">
                         <h1>Wade Sandberg</h1>
                         <p>435-241-0184</p>
                         <p>wade@sc.builders</p>
                     </div>
-                    <div class=" ">
+                    <div class="verticalBorder">
                         <h1>Chris Fawson</h1>
                         <p>555-888-5245</p>
                         <p>chris@sc.builders</p>
@@ -74,7 +100,7 @@
                 </div>
             </div>
             <div class="col-12 order-2 order-lg-2 col-lg-6 text-left d-flex flex-column align-items-center">
-                <form action="mailto:tyelf22@gmail.com" method="post" enctype="text/plain" class="d-flex flex-column" name="contactForm" id="emailForm">
+                <form action="mailto:mike@sc.builders" method="post" enctype="text/plain" class="d-flex flex-column" name="contactForm" id="emailForm">
                     Name:
                     <input type="text" name="Name" size="29" class="formSpacer inputHeight" id="name" >
                     E-mail:
@@ -85,13 +111,15 @@
                     <textarea name="Comments" id="" cols="30" rows="3" class="formSpacer commentHeight" id="comments"> </textarea>
                     <p>Please note: all fields are required.</p>
                     <div class="d-flex flex-row">
-                        <input type="submit" value="Send" class="button primaryBtn" onclick="fieldCheck()">
+                        <input type="submit" value="Send" class="button primaryBtn">
                         <input type="reset" value="Reset" class="button primaryBtn reset">
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    
 
     <div class="container mapCont">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.3280093104604!2d-112.45862228434699!3d40.60058615236053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752b7c0827c7e4d%3A0x3ccc76b13b4c8efa!2s225%20E%20Main%20St%20Suite%20M%2C%20Grantsville%2C%20UT%2084029!5e0!3m2!1sen!2sus!4v1594232678778!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -128,32 +156,17 @@
         </div>
     </div>
 
-<!-- <script>
-    function fieldCheck(){
-  var name = document.forms["contactForm"]["name"].value;
-  var email = document.forms["contactForm"]["email"].value;
-  var pNumber = document.forms["contactForm"]["pNumber"].value;
-  var comments = document.forms["contactForm"]["comments"].value;
-
-  if ((name == "" || name == null) || (email == "" || email == null) || (pNumber == "" || pNumber == null) || (comments == "" || comments == null)) {
-    alert("All fields must be filled out");
-    return false;
-  }
-  else{
-      document.querySelector("#emailForm").setAttribute("action", "mailto:tyelf22@gmail.com")
-  }
-}
-
-</script>
-
--->
+    <script>
+        document.getElementById("name").focus();
+    </script>
 
 
     <!--Bootstrap Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

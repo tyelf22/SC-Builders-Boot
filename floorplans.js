@@ -51,6 +51,7 @@ let bathThreeBtn = document.querySelector('#bathThree').addEventListener('click'
 let sfAnyBtn = document.querySelector('#sfAny').addEventListener('click', () => {
     numSf = false
     ourFilter(numBeds, numBaths, numSf)
+    
 });
 let sfOneBtn = document.querySelector('#sfOne').addEventListener('click', () => {
     numSf = [0, 1499]
@@ -70,7 +71,7 @@ let sfFourBtn = document.querySelector('#sfFour').addEventListener('click', () =
 });
 
 
-const aoPresidents = [
+const presidents = [
     {
         name: 'Lincoln',
         style: 'ss',
