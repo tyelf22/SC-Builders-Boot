@@ -82,6 +82,7 @@ sfAnyBtn.addEventListener('click', () => {
     numSf = false
     sfChangeColor(sfAnyBtn)
     ourFilter(numBeds, numBaths, numSf)
+    
 });
 let sfOneBtn = document.querySelector('#sfOne')
 sfOneBtn.addEventListener('click', () => {
@@ -125,6 +126,7 @@ function bedChangeColor(btn) {
     bedFiveBtn.style.color = 'black'
 
 
+
     btn.style.background = 'red'
     btn.style.color = 'white'
 }
@@ -164,7 +166,6 @@ function sfChangeColor(btn) {
     btn.style.background = 'red'
     btn.style.color = 'white'
 }
-
 
 const presidents = [
     {

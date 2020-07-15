@@ -77,6 +77,9 @@
 
 .circles{
     margin-bottom: $primaryBMargin;
+    display: flex;
+    flex-wrap: wrap;
+
 
     .icons{
         font-size: 60px;
@@ -89,5 +92,12 @@
         height: 110px;
         width: 110px;
         margin: 10px auto;
+    }
+
+}
+
+@media (min-width: 950px){
+    .circles{
+        flex-wrap: nowrap;
     }
 }
