@@ -12,58 +12,58 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-     <!-- *************** NAV BAR *************** -->
-     <section class="navigation">
-        <div class="nav-container">
-            <div class="brand">
-                <a href="./index.html">
-                <img src="./images/sportsCenterWhite.png" class="dropDownLogo" alt="">
-                </a>
-            </div>
-            <nav>
-                <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!"><span></span></a>
-                </div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="./presidentsPark.html">Presidents Park</a>
-                    </li>
-                    <li>
-                        <a href="./floorPlans.html">Floor Plans</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                      <a href="./contact.html">Contact</a>
-                  </li>
-                    <li>
-                        <a href="#!">More</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="./testimonials.html">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="./meetTheOwners.html">Meet The Owners</a>
-                            </li>
-                            <li>
-                                <a href="./gallery.html">Gallery</a>
-                            </li>
-                            <li>
-                              <a href="./pastProjects.html">Past Projects</a>
-                          </li>
-                          <li>
-                            <a href="./meetTheAgents.html">Meet The Agents</a>
-                        </li>
-                        </ul>
-                    </li>
-                    <li>
-                      <a class="callNow" href="tel:4358417309">Call Now</a>
-                    </li>
-                </ul>
-            </nav>
+<!-- *************** NAV BAR *************** -->
+<section class="navigation">
+    <div class="nav-container">
+        <div class="brand">
+            <a href="./index.html">
+            <img src="./images/sportsCenterWhite.png" class="dropDownLogo" alt="">
+            </a>
         </div>
-    </section>
+        <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+            </div>
+            <ul class="nav-list">
+                <li class="addMobileBack">
+                    <a href="./presidentsPark.html">Presidents Park</a>
+                </li>
+                <li class="addMobileBack">
+                    <a href="./floorPlans.html">Floor Plans</a>
+                </li>
+                <li class="addMobileBack">
+                    <a href="./about.html">About</a>
+                </li>
+                <li class="addMobileBack">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li class="addMobileBack" >
+                    <a id="toggleBtn" href="#!">More</a>
+                    <ul class="nav-dropdown">
+                        <li class="addBg">
+                            <a  href="./testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="addBg">
+                            <a  href="./meetTheOwners.html">Meet The Owners</a>
+                        </li>
+                        <li class="addBg">
+                            <a  href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="addBg">
+                            <a  href="./pastProjects.html">Past Projects</a>
+                        </li>
+                        <li class="addBg">
+                        <a  href="./meetTheAgents.html">Meet The Agents</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="addMobileBack">
+                    <a class="callNow" href="tel:4358417309">Call Now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
     <!-- *************** JumboTron *************** -->
     <div class="container-fluid jumboBg floorPlansBg">
         <div class="overlay">
@@ -78,30 +78,38 @@
     <!-- *************** Filter *************** -->
     <div class="container filter">
         <div class="row">
-            <div class="col-12 col-lg-6 bedroom">
-                <h2>Bedrooms</h2>
+            <div class="col-12 col-lg-4 bedroom allFilters">
+                <h4>Type: </h4>
+                <input type="button" value="Rambler"  class="filterButton">
+                <input type="button" value="Townhome"  class="filterButton">
+            </div>
+            <div class="col-12 col-lg-8 sqfeet allFilters">
+                <h4>SQ Feet: </h4>
+                <input type="button" value="Any" id="sfAny" class="filterButton">
+                <input type="button" value="< 1500" id="sfOne" class="filterButton">
+                <input type="button" value="< 1500 - 1999" id="sfTwo" class="filterButton">
+                <input type="button" value="< 2000 - 2499" id="sfThree" class="filterButton">
+                <input type="button" value="< 2500 - 2999" id="sfFour" class="filterButton">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 bedroom allFilters">
+                <h4>Bedrooms: </h4>
                 <input type="button" value="Any" id="bedAny" class="filterButton">
                 <input type="button" value="2" id="bedTwo" class="filterButton">
                 <input type="button" value="3" id="bedThree" class="filterButton">
                 <input type="button" value="4" id="bedFour" class="filterButton">
                 <input type="button" value="5 +" id="bedFive" class="filterButton">
             </div>
-            <div class="col-12 col-lg-6 bathroom">
-                <h2>Bathrooms</h2>
+            <div class="col-12 col-lg-4 bathroom allFilters">
+                <h4>Bathrooms: </h4>
                 <input type="button" value="Any" id="bathAny" class="filterButton">
                 <input type="button" value="1" id="bathOne" class="filterButton">
                 <input type="button" value="2" id="bathTwo" class="filterButton">
                 <input type="button" value="3 +" id="bathThree" class="filterButton">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 sqfeet">
-                <h2>SQ Feet</h2>
-                <input type="button" value="Any" id="sfAny" class="filterButton">
-                <input type="button" value="< 1500" id="sfOne" class="filterButton">
-                <input type="button" value="< 1500 - 1999" id="sfTwo" class="filterButton">
-                <input type="button" value="< 2000 - 2499" id="sfThree" class="filterButton">
-                <input type="button" value="< 2500 - 2999" id="sfFour" class="filterButton">
+            <div class="col-12 col-lg-4 bathroom allFilters">
+                <input type="button" value="3 +" id="bathThree" class="filterButton">
             </div>
         </div>   
     </div>
@@ -168,7 +176,7 @@
                 <div class="floorPlanText">
                     <h2>Adams</h2>
                     <p class="grayShade">Style: Single Story</p>
-                    <p>Bed: 2 Bath: 2 SQ ft 2900</p>
+                    <p>Bed: 2 Bath: 1 SQ ft 2900</p>
                     <input type="button" id="adamsBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
                 </div>
             </div>

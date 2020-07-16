@@ -119,11 +119,11 @@ function bedChangeColor(btn) {
     bedFiveBtn.style.background = "none"
 
 
-    bedAnyBtn.style.color = 'black'
-    bedTwoBtn.style.color = 'black'
-    bedThreeBtn.style.color = 'black'
-    bedFourBtn.style.color = 'black'
-    bedFiveBtn.style.color = 'black'
+    bedAnyBtn.style.color = 'red'
+    bedTwoBtn.style.color = 'red'
+    bedThreeBtn.style.color = 'red'
+    bedFourBtn.style.color = 'red'
+    bedFiveBtn.style.color = 'red'
 
 
 
@@ -138,10 +138,10 @@ function bathChangeColor(btn) {
     bathTwoBtn.style.background = "none"
     bathThreeBtn.style.background = "none"
 
-    bathAnyBtn.style.color = 'black'
-    bathOneBtn.style.color = 'black'
-    bathTwoBtn.style.color = 'black'
-    bathThreeBtn.style.color = 'black'
+    bathAnyBtn.style.color = 'red'
+    bathOneBtn.style.color = 'red'
+    bathTwoBtn.style.color = 'red'
+    bathThreeBtn.style.color = 'red'
 
 
     btn.style.background = 'red'
@@ -156,11 +156,11 @@ function sfChangeColor(btn) {
     sfThreeBtn.style.background = "none"
     sfFourBtn.style.background = "none"
 
-    sfAnyBtn.style.color = 'black'
-    sfOneBtn.style.color = 'black'
-    sfTwoBtn.style.color = 'black'
-    sfThreeBtn.style.color = 'black'
-    sfFourBtn.style.color = 'black'
+    sfAnyBtn.style.color = 'red'
+    sfOneBtn.style.color = 'red'
+    sfTwoBtn.style.color = 'red'
+    sfThreeBtn.style.color = 'red'
+    sfFourBtn.style.color = 'red'
 
 
     btn.style.background = 'red'
