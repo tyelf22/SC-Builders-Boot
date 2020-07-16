@@ -2,28 +2,30 @@
 
 .getToKnowUs {
     text-align: center;
-    margin: 100px 0px 70px 0px;
+    margin: 90px 0 30px;
+     
 }
 
 .cardContainer {
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-bottom: $primaryBMargin;
 
     .cards {
         display: block;
         justify-content: space-evenly;
+        margin: 50px 0;
+        
 
         .card {
-            height: 500px;
-            width: 350px;
+            height: 350px;
+            width: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px 10px 10px 10px;
             box-shadow: 6px 6px 6px grey;
-            margin-top: 10px;
+            position: relative;
             h2 {
                 &:after {
                     background-color: $primaryColor;
@@ -37,14 +39,20 @@
             }
 
             img {
-                height: 150px;
-                width: 150px;
+                height: 130px;
+                width: 130px;
                 border-radius: 100px;
+                
             }
         }
 
         .button {
             color: black;
+            position: absolute;
+            bottom: 20px;
+            margin: auto;
+            left: 0;
+            right: 0;
 
             &:hover {
                 color: white;
@@ -55,11 +63,11 @@
 }
 
 @media (min-width: 950px) {
-    .cardContainer {
+        .cardContainer {
         display: block;
 
         .cards {
             display: flex;
         }
-    }
+}
 }

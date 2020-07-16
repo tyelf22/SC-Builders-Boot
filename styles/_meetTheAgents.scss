@@ -8,14 +8,14 @@
     margin-bottom: $primaryBMargin;
     .agentImage1 {
         height: 320px;
-        width: 280px;
+        width: 320px;
         border-radius: 100%;
     }
 
     .agentImage2 {
         border-radius: 100%;
         height: 320px;
-        width: 280px;
+        width: 320px;
     }
 
     .agentRow1 {
@@ -36,7 +36,7 @@
     .agents {
         
         .agentImage2 {
-            margin-right: 100px;
+            // margin-right: 100px;
         }
     }
 }

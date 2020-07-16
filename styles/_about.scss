@@ -1,6 +1,7 @@
 //**************Main Content*****************
 .aboutBg{
     background-image: url(../images/aboutbg.jpg);
+    display: flex;
 }
 
 .about{
@@ -20,6 +21,8 @@
             height: auto;
             text-align: center;
             margin-top: 70px;
+            padding-left: 40px;
+            padding-right: 40px;
            }
     }
     .row2{
@@ -31,6 +34,8 @@
             height: auto;
             text-align: center;
             color: black;
+            padding-left: 40px;
+            padding-right: 40px;
            }
     }
     .row3{
@@ -42,6 +47,8 @@
             height: auto;
             text-align: center;
             color: black;
+            padding-left: 40px;
+            padding-right: 40px;
            }
     }
 }
@@ -52,10 +59,10 @@
 @media (min-width: 950px){
 .about
     {
-        margin-top: 90px;
+        margin-top: 70px;
         .row
         {
-            margin-top: 60px;
+            margin-top: 40px;
         }
     }
 }
