@@ -22,4 +22,40 @@
     }); // end DOM ready
   })(jQuery); // end jQuery
 
+  //get the desktop menu itmes
+  toggleBtn = document.querySelector('#toggleBtn')
+  addBg = document.querySelectorAll('.addBg')
+
+  //change the desktop menu items to have background on click
+  toggleBtn.addEventListener('click', () => {
+    addBg.forEach(bg => {
+      bg.style.background = 'rgba(30,30,30, 0.85)'
+    });
+
+  })
+
+  let toggle = false;
+
+  //get the mobile menu itmes
+  navToggle = document.querySelector('#nav-toggle')
+  addMobileBackSingle = document.querySelector('.addMobileBack')
+  addMobileBack = document.querySelectorAll('.addMobileBack')
+
+  //change the mobile menu items to have background on click
+  navToggle.addEventListener('click', () => {
+    toggle = !toggle
+    console.log('this is toggle ' + toggle)
+    if(toggle){
+      addMobileBack.forEach(bg => {
+        bg.style.background = 'rgba(30,30,30, 0.85)'
+      })
+    }else {
+      addMobileBack.forEach(bg => {
+        setTimeout(() => {
+          bg.style.background = 'none'
+        }, 300)
+      })
+    }
+  })
+
 
