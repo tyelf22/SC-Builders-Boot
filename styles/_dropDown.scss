@@ -1,0 +1,180 @@
+ // Navigation Variables
+ $content-width: 1600px;
+ $breakpoint: 799px;
+ $nav-height: 60px;
+ $nav-background: rgba(30,30,30, 0.85);
+ $nav-font-color: #ffffff;
+ $link-hover-color: #2581dc;
+
+ // Outer navigation wrapper
+ .navigation {
+     height: $nav-height;
+     background: $nav-background;
+
+    //  overflow: hidden;
+     position: fixed; /* Set the navbar to fixed position */
+     top: 0; /* Position the navbar at the top of the page */
+     width: 100%; /* Full width */
+     z-index: 99;
+ }
+
+ // Logo and branding
+ .brand {
+     position: absolute;
+     padding-left: 20px;
+     float: left;
+     
+     text-transform: uppercase;
+     font-size: 1.4em;
+     .dropDownLogo{
+         height: 50px;
+         width: 100px;
+         margin-top: 5px;
+        
+     }
+     a,
+     a:visited {
+         color: $nav-font-color;
+         text-decoration: none;
+     }
+ }
+
+ // Container with no padding for navbar
+ .nav-container {
+     max-width: $content-width;
+     margin: 0 auto;
+     
+ }
+
+ // Navigation
+ nav {
+     float: right;
+     ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         li {
+             float: left;
+             position: relative;
+             
+             a,
+             a:visited {
+                 display: block;
+                 padding: 0 20px;
+                 line-height: $nav-height;
+                 color: $nav-font-color;
+                 text-decoration: none;
+                 
+                 &:hover {
+                     background: white;
+                     color: black;
+                     text-decoration-color: white;
+                 }
+                 &:not(:only-child):after {
+                     padding-left: 4px;
+                     content: " ▾";
+                 }
+             } // Dropdown list
+             ul li {
+                 min-width: 190px;
+                 a {
+                     padding: 15px;
+                     line-height: 20px;
+                     
+                 }
+             }
+         }
+     }
+ }
+
+ // Dropdown list binds to JS toggle event
+ .nav-dropdown {
+     position: absolute;
+     display: none;
+     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ /* Mobile navigation */
+
+ // Binds to JS Toggle
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     bottom: 3px;
+     right: 10px;
+    //  background: $nav-background; check on this!
+     height: $nav-height;
+     width: $nav-height;
+ }
+ @media only screen and (max-width: 798px) {
+     // Hamburger nav visible on mobile only
+     .nav-mobile {
+         display: block;
+     }
+     nav {
+         width: 100%;
+         padding: $nav-height 0 15px;
+         ul {
+             display: none;
+             li {
+                 float: none;
+                 a {
+                     padding: 15px;
+                     line-height: 20px;
+                 }
+                 ul li a {
+                     padding-left: 30px;
+                 }
+             }
+         }
+     }
+     .nav-dropdown {
+         position: static;
+
+     }
+ }
+ @media screen and (min-width: $breakpoint) {
+     .nav-list {
+         display: block !important;
+     }
+ }
+ #nav-toggle {
+     position: absolute;
+     left: 18px;
+     top: 22px;
+     cursor: pointer;
+     padding: 10px 35px 16px 0px;
+     span,
+     span:before,
+     span:after {
+         
+         cursor: pointer;
+         border-radius: 1px;
+         height: 3px;
+         width: 30px;
+         background: $nav-font-color;
+         position: absolute;
+         display: block;
+         content: "";
+         transition: all 300ms ease-in-out;
+     }
+     span:before {
+         top: -8px;
+     }
+     span:after {
+         bottom: -8px;
+     }
+     &.active span {
+         background-color: transparent;
+         &:before,
+         &:after {
+             top: 0;
+         }
+         &:before {
+             transform: rotate(45deg);
+         }
+         &:after {
+             transform: rotate(-45deg);
+         }
+     }
+ }

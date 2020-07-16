@@ -10,34 +10,61 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 <body>
-    <!-- *************** HEADER *************** -->
-    <header>
-        <a class="logo" href="index.html">
-            <img src="./images/sportsCenterWhite.png" alt="SC Builders Logo">
-        </a>
+<!-- *************** NAV BAR *************** -->
+<section class="navigation">
+    <div class="nav-container">
+        <div class="brand">
+            <a href="./index.html">
+            <img src="./images/sportsCenterWhite.png" class="dropDownLogo" alt="">
+            </a>
+        </div>
         <nav>
-            <ul class="navLinks">
-                <li><a href="presidentsPark.html">Presidents Park</a></li>
-                <li><a href="floorPlans.html">Floorplans</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="more.html">More</a></li>
+            <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+            </div>
+            <ul class="nav-list">
+                <li class="addMobileBack">
+                    <a href="./presidentsPark.html">Presidents Park</a>
+                </li>
+                <li class="addMobileBack">
+                    <a href="./floorPlans.html">Floor Plans</a>
+                </li>
+                <li class="addMobileBack">
+                    <a href="./about.html">About</a>
+                </li>
+                <li class="addMobileBack">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li class="addMobileBack" >
+                    <a id="toggleBtn" href="#!">More</a>
+                    <ul class="nav-dropdown">
+                        <li class="addBg">
+                            <a  href="./testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="addBg">
+                            <a  href="./meetTheOwners.html">Meet The Owners</a>
+                        </li>
+                        <li class="addBg">
+                            <a  href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="addBg">
+                            <a  href="./pastProjects.html">Past Projects</a>
+                        </li>
+                        <li class="addBg">
+                        <a  href="./meetTheAgents.html">Meet The Agents</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="addMobileBack">
+                    <a class="callNow" href="tel:4358417309">Call Now</a>
+                </li>
             </ul>
         </nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkBtn">
-            <i class="fas fa-bars"></i>
-        </label>
-
-        <input type="checkbox" id="checkTwo">
-        <label for="checkTwo" class="checkBtnTwo">
-            <i class="fas fa-times"></i>
-        </label>
-        
-        <a href="#" class="cta"><button class="contactBtn">Contact</button></a>
-    </header>
+    </div>
+</section>
     <!-- *************** JumboTron *************** -->
     <div class="container-fluid jumboBg aboutBg">
         <div class="overlay">
@@ -52,16 +79,16 @@
     <div class="row row1">
         <div class="col-12 order-2 order-lg-1 col-lg-6 aboutimage1 aboutImageStyling">
         </div>
-        <div class="col-12 order-1 order-lg-2 col-lg-6 text1">
+        <div class="col-12 order-1 order-lg-2 col-lg-6 text1 ">
             <h1>WHO IS SC BUILDERS?</h1>
-            <p>"SC Builders, Inc., is a full service General Contractor based in Grantsville, Utah. Founded in 1997 and built on a foundation of honesty, integrity, value, and efficiency. SC Builders has grown to become a top General Contractor in the Tooele and Salt Lake Valley."
+            <p class="text-left">"SC Builders, Inc., is a full service General Contractor based in Grantsville, Utah. Founded in 1997 and built on a foundation of honesty, integrity, value, and efficiency. SC Builders has grown to become a top General Contractor in the Tooele and Salt Lake Valley."
             </p>
         </div>
     </div>
     <div class="row row2">
         <div class="col-12 col-lg-6 text2">
             <h1>BUILT FOR LIVING</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis et ad quos. Accusamus, nemo deserunt cumque doloremque, assumenda exercitationem aliquid consectetur quo sapiente iusto repellendus autem repellat necessitatibus minima?</p>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis et ad quos. Accusamus, nemo deserunt cumque doloremque, assumenda exercitationem aliquid consectetur quo sapiente iusto repellendus autem repellat necessitatibus minima?</p>
         </div>
         <div class="col-12 col-lg-6  aboutimage2 aboutImageStyling">
         </div>
@@ -71,7 +98,7 @@
         </div>
         <div class="col-12 order-1 order-lg-2 col-lg-6 text3">
             <h1>OUR MISSION</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur officiis sunt dicta libero quam deleniti nostrum aliquid maiores sint, distinctio eum minus sit repellat quibusdam eos, ut, perferendis voluptatum.</p>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur officiis sunt dicta libero quam deleniti nostrum aliquid maiores sint, distinctio eum minus sit repellat quibusdam eos, ut, perferendis voluptatum.</p>
         </div>
     </div>
 </div>
@@ -111,7 +138,6 @@
         </div>
     </div>
 
-
     <!-- *************** FOOTER *************** -->
     <footer class="container-fluid footer">
         <div class="container">
@@ -148,8 +174,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
 
 </body>

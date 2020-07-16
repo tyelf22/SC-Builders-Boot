@@ -84,9 +84,26 @@
 
 .circles{
     margin-bottom: $primaryBMargin;
+    
+
 
     .icons{
         font-size: 70px;
         color: white;
+    }
+
+    .circle{
+        border-radius: 100px;
+        background: $primaryColor;
+        height: 110px;
+        width: 110px;
+        margin: 10px auto;
+    }
+
+}
+
+@media (min-width: 950px){
+    .circles{
+        flex-wrap: nowrap;
     }
 }

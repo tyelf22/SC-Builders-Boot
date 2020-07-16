@@ -1,3 +1,5 @@
+
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -30,10 +32,10 @@ header {
 
     .logo {
         cursor: pointer;
-        margin-right: auto;
+
         img {
-            height: 60px;
-            width: 120px;
+            height: 30px;
+            width: 60px;
         }
 
     }
@@ -79,6 +81,8 @@ header {
         color: black;
     }
 }
+
+
 
 
 @media (max-width: 1250px){

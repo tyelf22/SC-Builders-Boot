@@ -4,6 +4,8 @@
 }
 
 .agents {
+
+    margin-bottom: $primaryBMargin;
     .agentImage1 {
         height: 320px;
         width: 280px;
@@ -32,6 +34,7 @@
 
 @media (min-width: 950px) {
     .agents {
+        
         .agentImage2 {
             margin-right: 100px;
         }
