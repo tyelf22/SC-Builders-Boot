@@ -10,6 +10,8 @@
  .navigation {
      height: $nav-height;
      background: $nav-background;
+     -webkit-backdrop-filter: blur(8px);
+     backdrop-filter: blur(8px);
 
     //  overflow: hidden;
      position: fixed; /* Set the navbar to fixed position */
@@ -56,6 +58,11 @@
          li {
              float: left;
              position: relative;
+
+             .active {
+                background: white;
+                color: black !important;
+             }
              
              a,
              a:visited {

@@ -1,164 +1,165 @@
 
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    padding: 8px 10%;
-    background-color: rgba(0,0,0,0.89);
-    box-shadow: 0 8px 6px -6px #999;
+// header {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: baseline;
+//     padding: 8px 10%;
+//     background-color: red;
     
-    .checkBtn {
-        font-size: 30px;
-        margin-right: 40px;
-        cursor: pointer;
-        display: none;
-    }
+//     box-shadow: 0 8px 6px -6px #999;
+    
+//     .checkBtn {
+//         font-size: 30px;
+//         margin-right: 40px;
+//         cursor: pointer;
+//         display: none;
+//     }
 
-    .checkBtnTwo {
-        font-size: 30px;
-        margin-right: 40px;
-        cursor: pointer;
-        display: none;
-    }
+//     .checkBtnTwo {
+//         font-size: 30px;
+//         margin-right: 40px;
+//         cursor: pointer;
+//         display: none;
+//     }
 
-    #check {
-        display: none;
-    }
+//     #check {
+//         display: none;
+//     }
 
-    #checkTwo {
-        display: none;
-    }
+//     #checkTwo {
+//         display: none;
+//     }
 
-    .logo {
-        cursor: pointer;
+//     .logo {
+//         cursor: pointer;
 
-        img {
-            height: 30px;
-            width: 60px;
-        }
+//         img {
+//             height: 30px;
+//             width: 60px;
+//         }
 
-    }
+//     }
 
 
-    .navLinks {
-        list-style: none;
+//     .navLinks {
+//         list-style: none;
         
 
-        li {
-            display: inline-block;
-            padding: 0px 20px;
+//         li {
+//             display: inline-block;
+//             padding: 0px 20px;
             
             
-            cursor: pointer;
-            a {
-                padding: 0px 10px;
-                text-decoration: none;
-                transition: all 0.3s ease 0s;
-                color: white;
-                outline: 1 white;       
-            }
-            :hover{
-                border-bottom: 3px solid #FFFFFF;
-            }
+//             cursor: pointer;
+//             a {
+//                 padding: 0px 10px;
+//                 text-decoration: none;
+//                 transition: all 0.3s ease 0s;
+//                 color: white;
+//                 outline: 1 white;       
+//             }
+//             :hover{
+//                 border-bottom: 3px solid #FFFFFF;
+//             }
             
-        }
-    }
+//         }
+//     }
 
-    .contactBtn {
-        margin-left: 20px; 
-        padding: 9px 25px;
-        background-color: rgba(0,0,0,0.0);
-        border: 2px solid white;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        color: white;
-    }
+//     .contactBtn {
+//         margin-left: 20px; 
+//         padding: 9px 25px;
+//         background-color: rgba(0,0,0,0.0);
+//         border: 2px solid white;
+//         border-radius: 50px;
+//         cursor: pointer;
+//         transition: all 0.3s ease 0s;
+//         color: white;
+//     }
 
-    .contactBtn:hover {
-        background-color: white;
-        color: black;
-    }
-}
-
-
+//     .contactBtn:hover {
+//         background-color: white;
+//         color: black;
+//     }
+// }
 
 
-@media (max-width: 1250px){
-    header{
-        .navLinks {
+
+
+// @media (max-width: 1250px){
+//     header{
+//         .navLinks {
     
-            li {
-                padding: 0px 3px;
+//             li {
+//                 padding: 0px 3px;
 
 
-            }
+//             }
             
-        }
+//         }
 
-        .contactBtn {
-            margin-left: 10px; 
+//         .contactBtn {
+//             margin-left: 10px; 
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-@media (max-width: 950px){
-    header {
-        position: relative;
-        .checkBtn {
-            display: block;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
-        }
-        .checkBtnTwo{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
-        }
+// @media (max-width: 950px){
+//     header {
+//         position: relative;
+//         .checkBtn {
+//             display: block;
+//             position: absolute;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             color: white;
+//         }
+//         .checkBtnTwo{
+//             position: absolute;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             color: white;
+//         }
 
-        .contactBtn {
-            position: absolute;
-            left: -100%;
-            transform: translate(-50%, -50%);
-            margin-left: 0px; 
-            margin-top: 80vh;
-            width: 40%;
-            transition: all .5s;
-            background-color: rgba(0,0,0,0.0);
-            z-index: 99;
-        }
+//         .contactBtn {
+//             position: absolute;
+//             left: -100%;
+//             transform: translate(-50%, -50%);
+//             margin-left: 0px; 
+//             margin-top: 80vh;
+//             width: 40%;
+//             transition: all .5s;
+//             background-color: rgba(0,0,0,0.0);
+//             z-index: 99;
+//         }
         
-        .navLinks{
-            position: absolute;
-            z-index: 99;
-            margin-top: 33px;
-            width: 100%;
-            height: 92vh;
-            overflow: hidden;
-            background: rgba(0,0,0,0.89);
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
+//         .navLinks{
+//             position: absolute;
+//             z-index: 99;
+//             margin-top: 33px;
+//             width: 100%;
+//             height: 92vh;
+//             overflow: hidden;
+//             background: rgba(0,0,0,0.89);
+//             left: -100%;
+//             text-align: center;
+//             transition: all .5s;
             
-            li {
-                display: block;
-                margin-top: 10%;
+//             li {
+//                 display: block;
+//                 margin-top: 10%;
 
-                a {
-                    font-size: 25px;
-                    color: white;
-                }
-                a:hover {
-                    background: none;
-                    color: white;
-                }
-            }
-        }
-    }
-}
+//                 a {
+//                     font-size: 25px;
+//                     color: white;
+//                 }
+//                 a:hover {
+//                     background: none;
+//                     color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
 

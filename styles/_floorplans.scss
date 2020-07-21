@@ -1,8 +1,9 @@
 .filter{
     margin-bottom: 30px;
+   
 
     .allFilters{
-        margin: 10px 0;
+        margin: 5px 0;
     }
     
 
@@ -14,7 +15,7 @@
     
     .bathroom{
         text-align: left;
-        margin-bottom: 15px;
+        
     }
 
     .sqfeet{
@@ -22,21 +23,24 @@
     }
 
     .filterButton{
-        // border-radius: 50px;
         padding: 2px 15px;
         margin: 2px 0;
         background: none;
-        border: 2px solid $primaryColor;
+        border: 2px solid #DFDFDF;
         border-radius: 50px;
-        color: $primaryColor;
+        color: black;
         transition: all 0.3s ease 0s;
+        outline: none;
         
         
         &:hover{
-            background: $primaryColor;
-            color: white;
-            border: 2px solid red;
+            border-color: black !important;
         }
+    }
+
+    #clearBtn {
+        width: 50%;
+        margin-top: 30px;
     }
 }
 
@@ -55,8 +59,9 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+
+ 
 
     .modal-content {
         background-color: #fefefe;
@@ -108,15 +113,17 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: $primaryBMargin;
+    min-height: 50vh;
     
 
     .floorPlanCards {
-        min-height: 50vh;
         justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
 
         .floorPlanCard {
-            height: auto;
-            width: 350px;
+            height: 380px;
+            width: 250px;
             display: flex;
             flex-direction: column;
             box-shadow: 6px 6px 6px grey;
@@ -170,16 +177,19 @@
 }
 
 @media (min-width: 950px) {
+
     .floorPlanContainer {
-        
+
         .floorPlanCards {
-            display: flex;
-            flex-wrap: wrap;
+    
+            .floorPlanCard {
+                width: 300px;
+                margin: 10px 30px;
+            }
         }
-    }
+    }    
 
     .filter{
-        // display: flex;
         margin-bottom: 10px;
     
     }
