@@ -112,59 +112,36 @@ sfFourBtn.addEventListener('click', () => {
 
 //Change bed button colors
 function bedChangeColor(btn) {
-    bedAnyBtn.style.background = "none"
-    bedTwoBtn.style.background = "none"
-    bedThreeBtn.style.background = "none"
-    bedFourBtn.style.background = "none"
-    bedFiveBtn.style.background = "none"
+    bedAnyBtn.style.borderColor = '#DFDFDF'
+    bedTwoBtn.style.borderColor = '#DFDFDF'
+    bedThreeBtn.style.borderColor = '#DFDFDF'
+    bedFourBtn.style.borderColor = '#DFDFDF'
+    bedFiveBtn.style.borderColor = '#DFDFDF'
 
-
-    bedAnyBtn.style.color = 'red'
-    bedTwoBtn.style.color = 'red'
-    bedThreeBtn.style.color = 'red'
-    bedFourBtn.style.color = 'red'
-    bedFiveBtn.style.color = 'red'
-
-
-
-    btn.style.background = 'red'
-    btn.style.color = 'white'
+    btn.style.borderColor = 'black'
 }
 
 //change bath button colors
 function bathChangeColor(btn) {
-    bathAnyBtn.style.background = "none"
-    bathOneBtn.style.background = "none"
-    bathTwoBtn.style.background = "none"
-    bathThreeBtn.style.background = "none"
 
-    bathAnyBtn.style.color = 'red'
-    bathOneBtn.style.color = 'red'
-    bathTwoBtn.style.color = 'red'
-    bathThreeBtn.style.color = 'red'
+    bathAnyBtn.style.borderColor = '#DFDFDF'
+    bathOneBtn.style.borderColor = '#DFDFDF'
+    bathTwoBtn.style.borderColor = '#DFDFDF'
+    bathThreeBtn.style.borderColor = '#DFDFDF'
 
-
-    btn.style.background = 'red'
-    btn.style.color = 'white'
+    btn.style.borderColor = 'black'
 }
 
 //change sf button colors
 function sfChangeColor(btn) {
-    sfAnyBtn.style.background = "none"
-    sfOneBtn.style.background = "none"
-    sfTwoBtn.style.background = "none"
-    sfThreeBtn.style.background = "none"
-    sfFourBtn.style.background = "none"
-
-    sfAnyBtn.style.color = 'red'
-    sfOneBtn.style.color = 'red'
-    sfTwoBtn.style.color = 'red'
-    sfThreeBtn.style.color = 'red'
-    sfFourBtn.style.color = 'red'
+    sfAnyBtn.style.borderColor = '#DFDFDF'
+    sfOneBtn.style.borderColor = '#DFDFDF'
+    sfTwoBtn.style.borderColor = '#DFDFDF'
+    sfThreeBtn.style.borderColor = '#DFDFDF'
+    sfFourBtn.style.borderColor = '#DFDFDF'
 
 
-    btn.style.background = 'red'
-    btn.style.color = 'white'
+    btn.style.borderColor = 'black'
 }
 
 const presidents = [
