@@ -8,46 +8,40 @@
     padding: 0;
     text-align: center;
     margin-bottom: $primaryBMargin;
-    
-    
 
     .overlay {
         height: 100%;
         width: 100%;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.5);
     }
 
-    .homeJumboCont{
+    .homeJumboCont {
         margin: 0 11.5%;
         // display: flex;
         align-items: center;
         height: 100%;
-        
 
         .homeText {
             width: 100%;
             color: white;
             padding: 130px 0px;
-            
 
             h1 {
                 font-size: 45px;
-                text-transform: uppercase;                
+                text-transform: uppercase;
             }
 
-            p{
+            p {
                 font-family: $secondaryText;
                 font-size: 20px;
                 margin-bottom: 50px;
             }
-            
+
             button {
                 margin-top: 10px;
             }
-
         }
     }
-
 }
 
 //Home Container
@@ -59,9 +53,9 @@
         margin-bottom: 30px;
 
         &:after {
-            background-color: $primaryColor; 
+            background-color: $primaryColor;
             bottom: 0;
-            content: '';
+            content: "";
             display: block;
             height: 2.5px;
             width: 50px;
@@ -75,18 +69,16 @@
 
         i {
             font-size: 40px;
-            
         }
 
-        img{
+        img {
             height: 50px;
         }
 
-        .promiseCol{
+        .promiseCol {
             margin: 30px 0;
             padding: 0px 15px;
             width: 100%;
-            
         }
     }
 
@@ -99,7 +91,7 @@
         background-size: cover;
         padding: 0;
 
-        .blackBox{
+        .blackBox {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -107,14 +99,14 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.7);;
+            background-color: rgba(0, 0, 0, 0.7);
             width: 50%;
             height: 65px;
             color: white;
             text-align: center;
             text-transform: uppercase;
         }
-        .redBox{
+        .redBox {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -130,14 +122,13 @@
             text-transform: uppercase;
         }
 
-        h3{
+        h3 {
             margin: 0;
         }
-        p{
+        p {
             margin: 0;
         }
     }
-
 }
 
 // *************** Presidents Park ***************
@@ -150,9 +141,9 @@
         font-size: $primarySize;
 
         &:after {
-            background-color: $primaryColor; 
+            background-color: $primaryColor;
             bottom: 0;
-            content: '';
+            content: "";
             display: block;
             height: 2.5px;
             width: 50px;
@@ -163,35 +154,43 @@
     .pParkImageContainer {
         position: relative;
         height: 500px;
-        background-image: url(../images/presPark.jpg);
+        background-image: url(../images/presparkbg.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
         color: white;
 
+        .presParkText {
+            color: white;
+            position: absolute;
+            top: 5%;
+            font-size: 15px;
+            left: 10%;
+            right: 10%;
+        }
+
         .pImageOverlay {
             height: 100%;
             width: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
         }
 
-
-        h3{
+        h3 {
             position: absolute;
-            top: 50%;
+            top: 75%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 35px;
+            font-size: 20px;
             cursor: pointer;
             transition: all 0.3s ease 0s;
             color: white;
 
-            &:hover{
+            &:hover {
                 font-size: 38px;
             }
 
-            i{
+            i {
                 font-size: 25px;
                 margin: 0 10px;
             }
@@ -203,7 +202,6 @@
 .homeGallery {
     padding: 0;
     margin-bottom: $primaryBMargin;
-
 
     .homeGalleryContainer {
         position: relative;
@@ -219,49 +217,78 @@
         .homeGalleryOverlay {
             height: 100%;
             width: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
         }
 
-        .homeGalleryButton{
+        .homeGalleryButton {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
         }
-            
     }
 }
 
 
 @media (min-width: 950px) {
-
     //Home Jumbo
     .homeJumbo {
         text-align: left;
 
-        .homeJumboCont{
-
+        .homeJumboCont {
             .homeText {
                 padding: 190px 0px;
 
-                h1{
+                h1 {
                     font-size: 55px;
                 }
-
             }
         }
     }
 
-}
+    .homeGallery {
+        padding: 0;
+        
+    }
 
-
-
-
-
-
-
-
-
-
-
+    .pPark {
+    
+        .pParkImageContainer {
+    
+            .presParkText {
+                color: white;
+                position: absolute;
+                top: 15%;
+                font-size: 20px;
+                left: 15%;
+                right: 15%;
+            }
+    
+            .pImageOverlay {
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.5);
+            }
+    
+            h3 {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                color: white;
+    
+                &:hover {
+                    font-size: 38px;
+                }
+    
+                i {
+                    font-size: 25px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}    

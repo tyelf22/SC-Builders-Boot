@@ -1,224 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SC Builders</title>
-    <!--Bootstrap Stylesheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!--Minified CSS Stylesheet-->
-    <link rel="stylesheet" href="./css/style.min.css">
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
-<!-- *************** NAV BAR *************** -->
-<section class="navigation">
-    <div class="nav-container">
-        <div class="brand">
-            <a href="./index.html">
-            <img src="./images/sportsCenterWhite.png" class="dropDownLogo" alt="">
-            </a>
-        </div>
-        <nav>
-            <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-            </div>
-            <ul class="nav-list">
-                <li class="addMobileBack">
-                    <a href="./presidentsPark.html">Presidents Park</a>
-                </li>
-                <li class="addMobileBack">
-                    <a href="./floorPlans.html">Floor Plans</a>
-                </li>
-                <li class="addMobileBack">
-                    <a href="./about.html">About</a>
-                </li>
-                <li class="addMobileBack">
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li class="addMobileBack" >
-                    <a id="toggleBtn" href="#!">More</a>
-                    <ul class="nav-dropdown">
-                        <li class="addBg">
-                            <a  href="./testimonials.html">Testimonials</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SC Builders</title>
+        <!--Bootstrap Stylesheet-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <!--Minified CSS Stylesheet-->
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <!-- *************** NAV BAR *************** -->
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="./index.html">
+                        <img
+                            src="./images/sportsCenterWhite.png"
+                            class="dropDownLogo"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="addMobileBack">
+                            <a href="./presidentsPark.html">Presidents Park</a>
                         </li>
-                        <li class="addBg">
-                            <a  href="./meetTheOwners.html">Meet The Owners</a>
+                        <li class="addMobileBack">
+                            <a href="./floorPlans.html">Floor Plans</a>
                         </li>
-                        <li class="addBg">
-                            <a  href="./gallery.html">Gallery</a>
+                        <li class="addMobileBack">
+                            <a href="./about.html">About</a>
                         </li>
-                        <li class="addBg">
-                            <a  href="./pastProjects.html">Past Projects</a>
+                        <li class="addMobileBack">
+                            <a href="./contact.html">Contact</a>
                         </li>
-                        <li class="addBg">
-                        <a  href="./meetTheAgents.html">Meet The Agents</a>
-                    </li>
+                        <li class="addMobileBack">
+                            <a id="toggleBtn" href="#!">More</a>
+                            <ul class="nav-dropdown">
+                                <li class="addBg">
+                                    <a href="./testimonials.html"
+                                        >Testimonials</a
+                                    >
+                                </li>
+                                <li class="addBg">
+                                    <a href="./meetTheOwners.html"
+                                        >Meet The Owners</a
+                                    >
+                                </li>
+                                <li class="addBg">
+                                    <a href="./gallery.html">Gallery</a>
+                                </li>
+                                <li class="addBg">
+                                    <a href="./pastProjects.html"
+                                        >Past Projects</a
+                                    >
+                                </li>
+                                <li class="addBg">
+                                    <a href="./meetTheAgents.html"
+                                        >Meet The Agents</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="addMobileBack">
+                            <a class="callNow" href="tel:4358417309"
+                                >Call Now</a
+                            >
+                        </li>
                     </ul>
-                </li>
-                <li class="addMobileBack">
-                    <a class="callNow" href="tel:4358417309">Call Now</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</section>
-     
-    <!-- *************** JumboTron *************** -->
-    <div class="container-fluid homeJumbo maxWidth">
-        <div class="overlay">
-            <div class="homeJumboCont">
-                <div class="homeText">
-                    <h1>Sc Builders, inc</h1>
-                    <p>Trusted building partner for over 23 years</p>
-                    <button class="primaryBtn">SEE OUR WORK</button>
-                </div>
+                </nav>
             </div>
-        </div>
-    </div>
-    <!-- *************** main *************** -->
-    <div class="container-fluid homeCont maxWidth">
-        <h2>Our Promise</h2>
-        <div class="row">
-            <!--icon information-->
-            <div class="col-12 col-lg-6 col-xl-5 order-1 order-lg-2 promiseCont">
-                <div class="row iconTop">
-                    <div class="col-12 col-sm-6 promiseCol">
-                        <i class="fas fa-calculator"></i>
-                        <!-- <img src="./images/calculator.png" alt=""> -->
-                        <h3>No Surprise Costs</h3>
-                        <p>NO suprise costs when you choose to build your dream home with us</p>
-                    </div>
-                    <div class="col-12 col-sm-6 promiseCol">
-                        <i class="far fa-gem"></i>
-                        <!-- <img src="./images/diamond (1).png" alt=""> -->
-                        <h3>Quality Guarantee</h3>
-                        <p>We don't cut corners and always make quality a top priority</p>
-                    </div>
-                </div>
-                <div class="row iconBottom">
-                    <div class="col-12 col-sm-6 promiseCol">
-                        <i class="fas fa-tools"></i>
-                        <!-- <img src="./images/construction.png" alt=""> -->
-                        <h3>Top Subcontractors
-                        </h3>
-                        <p>Our subcontractors are known throughout the valley and provide only the best work</p>
-                    </div>
-                    <div class="col-12 col-sm-6 promiseCol">
-                        <i class="far fa-handshake"></i>
-                        <!-- <img src="./images/agreement.png" alt=""> -->
-                        <h3>Customer Care</h3>
-                        <p>Our relationship with you is very important and we look forward to getting to know you</p>
+        </section>
+
+        <!-- *************** JumboTron *************** -->
+        <div class="container-fluid homeJumbo maxWidth">
+            <div class="overlay">
+                <div class="homeJumboCont">
+                    <div class="homeText">
+                        <h1>Sc Builders, inc</h1>
+                        <p>Trusted building partner for over 23 years</p>
+                        <button class="primaryBtn">SEE OUR WORK</button>
                     </div>
                 </div>
             </div>
-            <!--promise image-->
-            <div class="col-12 col-lg-6 order-2 order-lg-1 col-xl-7 promiseImg">
-                <div class="blackBox ">
-                    <h3>23</h3>
-                    <p>Years Established</p>
-                </div>
-                <div class="redBox ">
-                    <h3>300+</h3>
-                    <p>Completed Projects</p>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- *************** Presidents Park *************** -->
-    <div class="container-fluid pPark maxWidth">
-        <h2>Presidents Park</h2>
-        <div class="pParkImageContainer">
-            <div class="pImageOverlay"></div>
-            <a href="presidentsPark.html"><h3>Explore Presidents Park<i class="fas fa-arrow-right"></i></h3></a>
-        </div>
-    </div>
-
-   
-
-    <!-- *************** cards *************** -->
-    <!-- <div class="container-fluid greybg"> -->
-    <div class="container cardContainer">
-        <div class="cards">
-            <div class="card">
-                <img src="images/close-up-of-human-hand-327533 (2).jpg" alt="SC Builders worker">
-                <h2>Testimonials</h2>
-                Hear what others have said
-                <a href="testimonials.html">
-                    <input type="button" value="LEARN MORE" class="button primaryBtn">
-                </a>
-            </div>
-            <div class="card">
-                <img src="images/trevor.jpg" alt="SC Builders worker">
-                <h2>Meet Our Owners</h2>
-                Get to know us better
-                <a href="meetTheOwners.html">
-                <input type="button" value="LEARN MORE" class="button primaryBtn">
-                </a>
-            </div>
-            <div class="card">
-                <img src="images/tractor.jpg" alt="SC Builders worker">
-                <h2>Past Projects</h2>
-                See what else we have done
-                <a href="pastProjects.html">
-                    <input type="button" value="LEARN MORE" class="button primaryBtn">
-                </a>
-            </div>
-        </div>
-    </div>
-<!-- </div> -->
-
-    <!-- *************** Gallery *************** -->
-    <div class="container-fluid homeGallery maxWidth">
-        <div class="homeGalleryContainer">
-            <div class="homeGalleryOverlay"></div>
-           <a href="gallery.html"><button class="homeGalleryButton primaryBtn">View Gallery</button></a> 
-        </div>
-    </div>
-
-
-
-    <!-- *************** FOOTER *************** -->
-    <footer class="container-fluid footer">
-        <div class="container">
-            <div class="row footerCards">
-                <div class="col-12 col-md-4 d-flex d-flex justify-content-center align-self-center">
-                    <img src="./images/sportsCenterWhite.png" alt="SC Builders Logo" class="logo text-center">
+        <!-- *************** main *************** -->
+        <div class="container-fluid homeCont maxWidth">
+            <h2>Our Promise</h2>
+            <div class="row">
+                <!--icon information-->
+                <div
+                    class="col-12 col-lg-6 col-xl-5 order-1 order-lg-2 promiseCont"
+                >
+                    <div class="row iconTop">
+                        <div class="col-12 col-sm-6 promiseCol">
+                            <i class="fas fa-calculator"></i>
+                            <!-- <img src="./images/calculator.png" alt=""> -->
+                            <h3>No Surprise Costs</h3>
+                            <p>
+                                NO surprise costs when you choose to build your
+                                dream home with us
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 promiseCol">
+                            <i class="far fa-gem"></i>
+                            <!-- <img src="./images/diamond (1).png" alt=""> -->
+                            <h3>Quality Guarantee</h3>
+                            <p>
+                                We don't cut corners and always make quality a
+                                top priority
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row iconBottom">
+                        <div class="col-12 col-sm-6 promiseCol">
+                            <i class="fas fa-tools"></i>
+                            <!-- <img src="./images/construction.png" alt=""> -->
+                            <h3>Expert Craftmanship</h3>
+                            <p>
+                                Our subcontractors are known throughout the
+                                valley and providehigh quality work
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 promiseCol">
+                            <i class="far fa-handshake"></i>
+                            <!-- <img src="./images/agreement.png" alt=""> -->
+                            <h3>Customer Care</h3>
+                            <p>
+                                Our relationship with you is very important and
+                                we look forward to getting to know you
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 footerContact text-center">
-                    <p class="bold">Sc Builders</p>
-                    <p>372 East Main St</p>
-                    <p>Grantsville, UT</p>
-                    <p>84029</p>
-                    <p>555-555-5555</p>
-                    <p>mike@sc.builders</p>
-                </div>
-                <div class="col-6 col-md-4 footerSocial d-flex justify-content-center align-self-center">
-                    <a href="https://www.facebook.com/scbuilders01">
-                        <i class="fab fa-facebook fBook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/scbuilders01/">
-                        <i class="fab fa-instagram insta"></i>
-                    </a>
+                <!--promise image-->
+                <div
+                    class="col-12 col-lg-6 order-2 order-lg-1 col-xl-7 promiseImg"
+                >
+                    <div class="blackBox">
+                        <h3>23</h3>
+                        <p>Years Established</p>
+                    </div>
+                    <div class="redBox">
+                        <h3>300+</h3>
+                        <p>Completed Projects</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <div class="container-fluid copyright">
-        <div class="copyrightText">
-            &copy; 2020 SC Builders - All Rights Reserved
+        <!-- *************** Presidents Park *************** -->
+        <div class="container-fluid pPark maxWidth">
+            <h2>Presidents Park</h2>
+            <div class="pParkImageContainer">
+                <div class="pImageOverlay"></div>
+                <div>
+                    <a href="presidentsPark.html"
+                        ><h3>
+                            Explore Presidents Park<i
+                                class="fas fa-arrow-right"
+                            ></i></h3
+                    ></a>
+                </div>
+                <div>
+                    <p class="presParkText">
+                        We hold these truths to be self-evident, that all men
+                        are created equal, that they are endowed by their
+                        Creator with certain unalienable Rights, that among
+                        these are Life, Liberty and the pursuit of
+                        Happiness.--That to secure these rights, Governments are
+                        instituted among Men, deriving their just powers from
+                        the consent of the governed
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
 
 
+<!-- *************** Cards *************** -->
+        <div class="container newCardContainer">
+            <div class="newCards">
+                <div class="newCard" style="width: 19rem;">
+                    <img
+                        src="./images/tractor.jpg"
+                        class="card-img-top"
+                        alt="..." height="250px"
+                    />
+                    <div class="card-body">
+                        <h2 class="card-title">Past Projects</h2>
+                        <p class="card-text">See more of our work</p>
+                        <a href="./pastProjects.html" class="primaryBtn cardButton">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="newCard" style="width: 19rem;">
+                    <img
+                        src="./images/close-up-of-human-hand-327533 (2).jpg"
+                        class="card-img-top"
+                        alt="..." height="250px"
+                    />
+                    <div class="card-body">
+                        <h2 class="card-title">Testimonials</h2>
+                        <p class="card-text">Hear what others have said</p>
+                        <div><a href="./testimonials.html" class="primaryBtn cardButton">LEARN MORE</a></div>
+                    </div>
+                </div>
+                <div class="newCard" style="width: 19rem;">
+                    <img
+                        src="./images/person-holding-drafting-paper-544971.jpg"
+                        class="card-img-top"
+                        alt="..." height="250px"
+                    />
+                    <div class="card-body">
+                        <h2 class="card-title">Meet Our Owners</h2>
+                        <p class="card-text">Get to know us better</p>
+                        <a href="/meetTheOwners.html" class="primaryBtn cardButton">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- *************** Gallery *************** -->
+        <div class="container-fluid homeGallery maxWidth">
+            <div class="homeGalleryContainer">
+                <div class="homeGalleryOverlay"></div>
+                <a href="gallery.html"
+                    ><button class="homeGalleryButton primaryBtn">
+                        View Gallery
+                    </button></a
+                >
+            </div>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./main.js"></script>
-</body>
+        <!-- *************** FOOTER *************** -->
+        <footer class="container-fluid footer">
+            <div class="container">
+                <div class="row footerCards">
+                    <div
+                        class="col-12 col-md-4 d-flex d-flex justify-content-center align-self-center"
+                    >
+                        <img
+                            src="./images/sportsCenterWhite.png"
+                            alt="SC Builders Logo"
+                            class="logo text-center"
+                        />
+                    </div>
+                    <div class="col-6 col-md-4 footerContact text-center">
+                        <p class="bold">Sc Builders</p>
+                        <p>372 East Main St</p>
+                        <p>Grantsville, UT</p>
+                        <p>84029</p>
+                        <p>555-555-5555</p>
+                        <p>mike@sc.builders</p>
+                    </div>
+                    <div
+                        class="col-6 col-md-4 footerSocial d-flex justify-content-center align-self-center"
+                    >
+                        <a href="https://www.facebook.com/scbuilders01">
+                            <i class="fab fa-facebook fBook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/scbuilders01/">
+                            <i class="fab fa-instagram insta"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="container-fluid copyright">
+            <div class="copyrightText">
+                &copy; 2020 SC Builders - All Rights Reserved
+            </div>
+        </div>
+
+        <!--Bootstrap Scripts-->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
 </html>
