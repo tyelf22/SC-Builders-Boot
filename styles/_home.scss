@@ -1,18 +1,19 @@
 //Home Jumbo
 .homeJumbo {
-    height: 600px;
-    background-image: url(../images/homeBGLarge.jpg);
+    height: 100vh;
+    background-image: url(../images/coolpicflipped.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
     text-align: center;
     margin-bottom: $primaryBMargin;
+    
 
     .overlay {
         height: 100%;
         width: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.4);
     }
 
     .homeJumboCont {
@@ -254,6 +255,7 @@
     .pPark {
     
         .pParkImageContainer {
+
     
             .presParkText {
                 color: white;
