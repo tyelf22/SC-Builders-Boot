@@ -20,18 +20,103 @@ body {
 
 .primaryBtn{
     color: white;
-    border-radius: 25px;
-    border: 3px solid $primaryColor;
+    border: 1px solid white;
     padding: 10px 30px;
     background: none;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 
     &:hover {
         color: white;
-        background: black;
-        border: 3px solid black;
+        background: $primaryColor;
+        border: 1px solid $primaryColor;
     }
 }
+
+
+.cardBtn {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+	font-family: $primaryText, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding: .7em 1.4em;
+	padding-right: 4.7em;
+	background: $button-colour;
+	border: none;
+	transition: .2s;
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		padding-top: inherit;
+		padding-bottom: inherit;
+		width: 2.8em;
+		content: "\00a0";
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 1.2em;
+		text-align: center;
+		
+		transition: .2s;
+        transform-origin: 50% 60%;
+        
+        text-decoration: none;
+        color: white;
+	}
+	&:before {
+		background: $button-tint;
+	}
+	&:hover {
+        background: darken($button-colour, 10%);
+        text-decoration: none;
+        color: white;
+	}
+	&:active,
+	&:focus {
+		background: darken($button-colour, 30%);
+        outline: none;
+        text-decoration: none;
+        color: white;
+       
+	}
+}
+
+.cardBtn {
+	min-width: 15em;
+}
+
+.arrow {
+	background: #F0473E;
+	&:hover {
+		background: darken(#F0473E, 10%);
+	}
+	&:active,
+	&:focus {
+		background: darken(#F0473E, 30%);
+	}
+	&:after {
+		content: "\F054";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .3s alternate ease infinite;
+		animation: bounceright .3s alternate ease infinite;
+	}
+}
+
+@-webkit-keyframes bounceright {
+	from { -webkit-transform: translateX(0); }
+	to   { -webkit-transform: translateX(3px); }
+}
+
+@keyframes bounceright {
+	from { transform: translateX(0); }
+	to   { transform: translateX(3px); }
+}
+
+
 
 
 @import "./nav";
