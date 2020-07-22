@@ -45,10 +45,13 @@
 
     .button {
         color: black;
+        margin: 0 5px;
+        border: 1px solid black;
 
         &:hover {
+            border: 1px solid $primaryColor;
+            background: $primaryColor;
             color: white;
-            border: 2px solid black;
         }
     }
 } 

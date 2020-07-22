@@ -9,6 +9,7 @@
     <!--Minified CSS Stylesheet-->
     <link rel="stylesheet" href="./css/style.min.css">
     <!--Font Awesome-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -81,8 +82,8 @@
     <div class="row">
         <div class="col-12 col-lg-4 type allFilters text-center">
             <h4>Style</h4>
-            <input type="button" value="Rambler"  class="filterButton">
-            <input type="button" value="Townhome"  class="filterButton">
+            <input type="button" value="Single-Family" id="sf" class="filterButton">
+            <input type="button" value="Townhouse" id="th" class="filterButton">
         </div>
         <div class="col-12 col-md-6 col-lg-4 bedroom allFilters text-center">
             <h4>Bedrooms </h4>
@@ -111,8 +112,8 @@
             <input type="button" value="< 2000 - 2499" id="sfThree" class="filterButton">
             <input type="button" value="< 2500 - 2999" id="sfFour" class="filterButton">
         </div>
-        <div class="col-12 col-lg-4 clearBtn allFilters text-center">
-            <input type="button" value="Reset Filters" id="clearBtn" class="filterButton">
+        <div class="col-12 col-lg-4 allFilters text-center">
+            <input type="button" value="Reset Filters" id="resetBtn" class="filterButton">
         </div>
     </div>   
 </div>
@@ -148,120 +149,147 @@
     <!-- *************** cards *************** -->
     <div class="container floorPlanContainer test">
         <div class="floorPlanCards">
-            <div class="floorPlanCard lincoln" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard lincoln">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText ">
                     <h2>Lincoln</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1800</p>
-                    <input type="button" id="lincolnBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="lincolnBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
                
             </div>
-            <div class="floorPlanCard washington" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard washington">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Washington</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2000</p>
-                    <input type="button" id="washingtonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="washingtonBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
               
             </div>
-            <div class="floorPlanCard adams" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard adams">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Adams</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 1 SQ ft 2900</p>
-                    <input type="button" id="adamsBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="adamsBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
 
 
-            <div class="floorPlanCard jefferson" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard jefferson">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Jefferson</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <input type="button" id="jeffersonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="jeffersonBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
-            <div class="floorPlanCard trump" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard trump">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Trump</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 5 Bath: 3 SQ ft 2950</p>
-                    <input type="button" id="trumpBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="trumpBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
-            <div class="floorPlanCard reagan" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard reagan">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Reagan</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1900</p>
-                    <input type="button" id="reaganBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="reaganBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
 
 
-            <div class="floorPlanCard harrison" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard harrison">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Harrison</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 3 SQ ft 2300</p>
-                    <input type="button" id="harrisonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="harrisonBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
-            <div class="floorPlanCard kennedy" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard kennedy">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Kennedy</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 3 SQ ft 1500</p>
-                    <input type="button" id="kennedyBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="kennedyBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
-            <div class="floorPlanCard bush" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard bush">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Bush</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 3 SQ ft 1600</p>
-                    <input type="button" id="bushBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="bushBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
 
 
-            <div class="floorPlanCard roosevelt" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard roosevelt">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Roosevelt</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <input type="button" id="rooseveltBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="rooseveltBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
-            <div class="floorPlanCard truman" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard truman">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Truman</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 2 SQ ft 1500</p>
-                    <input type="button" id="trumanBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="trumanBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
-            <div class="floorPlanCard nixon" data-aos="flip-left" data-aos-once="true">
+            <div class="floorPlanCard nixon">
                 <img src="images/homeRendering.jpg" alt="SC Builders worker">
                 <div class="floorPlanText">
                     <h2>Nixon</h2>
-                    <p class="grayShade">Style: Single Story</p>
+                    <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2000</p>
-                    <input type="button" id="nixonBtn" value="View Floor Plan" class="primaryBtn floorPlansButton">
+                    <btn type="button" id="nixonBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
+                </div>
+            </div>
+            <div class="floorPlanCard carter">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Carter</h2>
+                    <p class="grayShade">Style: Townhouse</p>
+                    <p>Bed: 4 Bath: 3 SQ ft 2999</p>
+                    <btn type="button" id="carterBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
+                </div>
+            </div>
+            <div class="floorPlanCard ford">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Ford</h2>
+                    <p class="grayShade">Style: Townhouse</p>
+                    <p>Bed: 3 Bath: 2 SQ ft 1500</p>
+                    <btn type="button" id="fordBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
+                </div>
+            </div>
+            <div class="floorPlanCard hoover">
+                <img src="images/homeRendering.jpg" alt="SC Builders worker">
+                <div class="floorPlanText">
+                    <h2>Hoover</h2>
+                    <p class="grayShade">Style: Townhouse</p>
+                    <p>Bed: 2 Bath: 1 SQ ft 1300</p>
+                    <btn type="button" id="hooverBtn" class="cardBtn arrow floorPlansButton">View Floor Plan</btn>
                 </div>
             </div>
         </div>
