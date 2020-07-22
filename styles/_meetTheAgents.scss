@@ -10,6 +10,7 @@
         height: 320px;
         width: 320px;
         border-radius: 100%;
+
     }
 
     .agentImage2 {
@@ -25,15 +26,31 @@
 
     .agent1Text {
         border-left: solid red 2px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     .agent2Text {
         border-left: solid red 2px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
 
 @media (min-width: 950px) {
     .agents {
+
+        .agent1Text {
+            border-left: solid red 2px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    
+        .agent2Text {
+            border-left: solid red 2px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
         
         .agentImage2 {
             // margin-right: 100px;
