@@ -1,5 +1,5 @@
 .testimonialBg{
-    background-image: url(../images/coolpic.);
+    background-image: url(../images/quotesCroppedFinal.jpeg);
     background-position: center;
 }
 
@@ -14,16 +14,37 @@
     .testimonialCards {
         display: block;
         justify-content: space-evenly;
-        
 
-        .testCard {
-            height: 500px;
-            width: 350px;
+
+        .row1{
+            box-shadow: 4px 4px 10px grey;
+        }
+        
+        .testCard2{
+            
+                height: auto;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                padding: 20px 10px;
+                background-color:#FFE4E1;
+                border-radius: 8px;
+
+                margin-top: auto;
+                margin-bottom: auto;
+                position: relative;
+        
+    }
+
+        .testCard1 {
+            height: 300px;
+            width: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px 10px 10px 10px;
-            box-shadow: 6px 6px 6px grey;
+            
             margin-top: 10px;
             position: relative;
 
@@ -31,7 +52,9 @@
                 font-style: italic;
             }
 
+
             h2 {
+                font-size: 20px;
                 &:after {
                     background-color: $primaryColor;
                     bottom: 0;
@@ -39,15 +62,20 @@
                     display: block;
                     height: 2.5px;
                     width: 50px;
-                    margin: 0 auto;
-                    margin-bottom: 30px;
+                    margin: 5px auto 0px auto;
                 }
-            }
+           }
+
+           p{
+            font-size: 12px;
+
+        }
 
             img {
                 height: 150px;
                 width: 150px;
                 border-radius: 100px;
+                margin-bottom: 10px;
             }
         }
         }
