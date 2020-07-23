@@ -557,7 +557,7 @@ function ourFilter(style, numBeds, numBaths, numSf) {
 /****************** MODAL POPUP ******************/
 
 // Get the modal
-const modal = document.querySelector("#myModal");
+const modal = document.querySelector("#floorplanModal");
 
 // Get the <span> element that closes the modal
 const span = document.querySelector(".close");
@@ -571,7 +571,7 @@ const modalImg = document.querySelector('.modalImg')
 
 //functions
 function popUp(presNum) {
-    modal.style.display = "block";
+    // modal.style.display = "block";
     nameTag.innerText = presidents[presNum].name
     bedTag.innerText = presidents[presNum].bed
     bathTag.innerText = presidents[presNum].bath
@@ -638,6 +638,21 @@ trumanBtn.addEventListener('click', () => {
 const nixonBtn = document.querySelector('#nixonBtn')
 nixonBtn.addEventListener('click', () => {
     popUp(11)
+})
+
+const carterBtn = document.querySelector('#carterBtn')
+carterBtn.addEventListener('click', () => {
+    popUp(12)
+})
+
+const fordBtn = document.querySelector('#fordBtn')
+fordBtn.addEventListener('click', () => {
+    popUp(13)
+})
+
+const hooverBtn = document.querySelector('#hooverBtn')
+hooverBtn.addEventListener('click', () => {
+    popUp(14)
 })
 
 // When the user clicks on <span> (x), close the modal
