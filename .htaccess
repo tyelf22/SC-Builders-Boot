@@ -1,3 +1,8 @@
+#force https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 ## hide .html extension
 # To externally redirect /dir/file.html to /dir/file
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
