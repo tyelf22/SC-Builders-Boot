@@ -81,6 +81,16 @@
         }
     }
 
+    @media (min-width: 768px) {
+        .testimonialContainer {
+            display: block;
+    
+            .testimonialCards {
+                display: flex;
+            }
+        }
+    }
+
 
 
     @media (min-width: 950px) {
