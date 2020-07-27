@@ -83,14 +83,26 @@
 
 
 
-@media (min-width: 950px) {
+    @media (min-width: 950px) {
+        .testimonialContainer {
+            
+            margin-bottom: 0;
+        }
+    }
+
+
+
+@media (min-width: 1200px) {
     .testimonialContainer {
         display: block;
 
         .testimonialCards {
             display: flex;
+            
         }
     }
 }
+
+
 
     
