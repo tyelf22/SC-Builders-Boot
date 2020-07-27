@@ -87,16 +87,18 @@
 
 
     .icons{
-        font-size: 70px;
-        color: white;
+        font-size: 50px;
+        color:$primaryColor;
     }
 
     .circle{
-        border-radius: 100px;
-        background: $primaryColor;
+        border-radius: 80px;
+        background: white;
         height: 110px;
         width: 110px;
         margin: 10px auto;
+        border: solid $primaryColor 1px;
+
     }
 
 }
