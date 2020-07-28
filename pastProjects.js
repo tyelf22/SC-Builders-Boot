@@ -186,3 +186,4 @@ const button12 = document.querySelector('#project12')
 project12.addEventListener('click', () => {
     projectPopUp(11)
 })
+
