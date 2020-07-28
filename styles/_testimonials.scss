@@ -9,6 +9,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: $primaryBMargin;
+
+    .checked {
+        color: orange;
+      }
     
 
     .testimonialCards {
