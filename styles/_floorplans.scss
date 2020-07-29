@@ -49,64 +49,6 @@
     background-position: center;
 }
 
-// /* Modal Styles */
-// .modal {
-//     display: none; /* Hidden by default */
-//     position: fixed; /* Stay in place */
-//     z-index: 1; /* Sit on top */
-//     left: 0;
-//     top: 0;
-//     width: 100%; /* Full width */
-//     height: 100%; /* Full height */
-//     overflow: auto; /* Enable scroll if needed */
-//     background-color: rgb(0,0,0); /* Fallback color */
-//     background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
-
-
-
-//     .modal-content {
-//         background-color: #fefefe;
-//         margin: 30% auto; /* 15% from the top and centered */
-//         padding: 20px;
-//         border: 1px solid #888;
-//         width: 100%; /* Could be more or less, depending on screen size */
-
-//         .specs{
-//             margin-top: 10px;
-//             h3 {
-//                 display: inline-block;
-//             }
-//         }
-
-
-
-//         .modalImg {
-//             width: 100%;
-//             max-width: 950px;
-//             height: auto;
-
-//             display: block;
-//             margin: 0 auto;
-//         }
-
-
-//         .close {
-//             color: #aaa;
-//             text-align: right;
-//             font-size: 28px;
-//             font-weight: bold;
-
-//             &:hover, &:focus{
-//                 color: black;
-//                 text-decoration: none;
-//                 cursor: pointer;
-//             }
-
-//         }
-
-
-//     }
-// }
 
 .floorPlanContainer {
     padding: 0;
@@ -143,7 +85,6 @@
             }
 
             
-
             img {
                 height: 200px;
                 width: 100%;
@@ -151,26 +92,9 @@
             }
         }
 
-        .floorPlansButton {
-            
-        }
     }
 }
-
-// @media (min-width: 535px) {
-//     .floorPlanContainer {
-
-//         .floorPlanCards {
-    
-//             .floorPlanCard {
-//                 width: 300px;
-//                 margin: 10px 30px;
-//             }
-//         }
-//     }    
-
-// }    
-
+   
 @media (min-width: 800px) {
 
     /* Modal Styles */

@@ -6,6 +6,11 @@
 .agents {
     overflow-x: hidden;
 
+    .agentBorder{
+        border-left: solid red 2px;
+        padding-left: 15px;
+    }
+
     .agentContact{
         display: flex;
         align-items: center;
@@ -14,33 +19,11 @@
             font-size: 20px;
         }
 
-        a{
-
-        }
-        
-        
         p{
             margin-bottom: 0;
 
         }
 
-        .borderAgents{
-            border: solid black 1px;
-            border-radius: 20px;
-            width: auto;
-            height: auto;
-            padding: 5px 10px;
-            margin-right: 10px;
-            
-            
-            &:hover {
-            color: green;
-
-            
-            
-            
-            }
-        }
 
     .callingAgents{
         color: black;
@@ -48,8 +31,6 @@
     }
 
 }
-
-    
 
     margin-bottom: $primaryBMargin;
     .agentImage1 {
@@ -70,37 +51,6 @@
         padding: 10px 0px;
     }
 
-    .agent1Text {
-        border-left: solid red 2px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-    .agent2Text {
-
-        border-left: solid red 2px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
 }
 
-@media (min-width: 950px) {
-    .agents {
 
-        .agent1Text {
-            border-left: solid red 2px;
-            margin-left: 0px;
-            margin-top: 0px;
-        }
-    
-        .agent2Text {
-            border-left: solid red 2px;
-            margin-left: 0px;
-            margin-top: 0px;
-        }
-        
-        .agentImage2 {
-            // margin-right: 100px;
-        }
-    }
-}

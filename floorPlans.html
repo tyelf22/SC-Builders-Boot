@@ -14,7 +14,6 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <!-- *************** NAV BAR *************** -->
@@ -121,33 +120,6 @@
     </div>   
 </div>
 
-<!-- *************** Old Modal ***************  -->
-<!-- <div id="myModal"  class="modal">
-    <div class="modal-content" >
-        <span class="close">&times;</span>
-        <div class="container">
-            <h2 id="nameTag"></h2>
-            <hr>
-            <img class="modalImg" src="" alt="SC Builders floorplan image">
-            <div class="row specs">
-                <div class="col-4 text-center">
-                    <h3>Beds: </h3>
-                    <h3 id="bedTag"></h3>
-                </div>
-                <div class="col-4 text-center">
-                    <h3>Baths: </h3>
-                    <h3 id="bathTag"></h3>
-                </div>
-                <div class="col-4 text-center">
-                    <h3>Sqft: </h3>
-                    <h3 id="sfTag"></h3>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div> -->
-
   <!-- Modal -->
   <div class="modal fade" id="floorplanModal" tabindex="-1" role="dialog" aria-labelledby="projectsModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" >
@@ -178,9 +150,6 @@
         <div class="modal-body" id="nameTag">
            Description here...
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="secondaryBtn" data-dismiss="modal">Close</button>
-        </div> -->
       </div>
     </div>
   </div>
@@ -195,7 +164,7 @@
                     <h2>Lincoln</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1800</p>
-                    <btn type="button" id="lincolnBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="lincolnBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
                
             </div>
@@ -205,7 +174,7 @@
                     <h2>Washington</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2000</p>
-                    <btn type="button" id="washingtonBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="washingtonBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
               
             </div>
@@ -215,7 +184,7 @@
                     <h2>Adams</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 1 SQ ft 2900</p>
-                    <btn type="button" id="adamsBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="adamsBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
 
@@ -226,7 +195,7 @@
                     <h2>Jefferson</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <btn type="button" id="jeffersonBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="jeffersonBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard trump">
@@ -235,7 +204,7 @@
                     <h2>Trump</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 5 Bath: 3 SQ ft 2950</p>
-                    <btn type="button" id="trumpBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="trumpBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard reagan">
@@ -244,7 +213,7 @@
                     <h2>Reagan</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1900</p>
-                    <btn type="button" id="reaganBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="reaganBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
 
@@ -255,7 +224,7 @@
                     <h2>Harrison</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 3 SQ ft 2300</p>
-                    <btn type="button" id="harrisonBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="harrisonBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard kennedy">
@@ -264,7 +233,7 @@
                     <h2>Kennedy</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 3 SQ ft 1500</p>
-                    <btn type="button" id="kennedyBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="kennedyBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard bush">
@@ -273,7 +242,7 @@
                     <h2>Bush</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 3 SQ ft 1600</p>
-                    <btn type="button" id="bushBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="bushBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
 
@@ -284,7 +253,7 @@
                     <h2>Roosevelt</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <btn type="button" id="rooseveltBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="rooseveltBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard truman">
@@ -293,7 +262,7 @@
                     <h2>Truman</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 2 Bath: 2 SQ ft 1500</p>
-                    <btn type="button" id="trumanBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="trumanBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard nixon">
@@ -302,7 +271,7 @@
                     <h2>Nixon</h2>
                     <p class="grayShade">Style: Single-Family</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2000</p>
-                    <btn type="button" id="nixonBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="nixonBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard carter">
@@ -311,7 +280,7 @@
                     <h2>Carter</h2>
                     <p class="grayShade">Style: Townhouse</p>
                     <p>Bed: 4 Bath: 3 SQ ft 2999</p>
-                    <btn type="button" id="carterBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="carterBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard ford">
@@ -320,7 +289,7 @@
                     <h2>Ford</h2>
                     <p class="grayShade">Style: Townhouse</p>
                     <p>Bed: 3 Bath: 2 SQ ft 1500</p>
-                    <btn type="button" id="fordBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="fordBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
             <div class="floorPlanCard hoover">
@@ -329,7 +298,7 @@
                     <h2>Hoover</h2>
                     <p class="grayShade">Style: Townhouse</p>
                     <p>Bed: 2 Bath: 1 SQ ft 1300</p>
-                    <btn type="button" id="hooverBtn" class="cardBtn arrow floorPlansButton" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
+                    <btn type="button" id="hooverBtn" class="cardBtn arrow" data-toggle="modal" data-target="#floorplanModal">View Floor Plan</btn>
                 </div>
             </div>
         </div>
@@ -373,11 +342,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/main.js"></script>
