@@ -7,7 +7,7 @@
     background-size: cover;
     padding: 0;
     text-align: center;
-    margin-bottom: $primaryBMargin;
+    
     position: relative;
     
 
@@ -95,7 +95,7 @@
 
 //Home Container
 .homeCont {
-    margin-bottom: $primaryBMargin;
+    padding: 70px 0 ;
     h2 {
         text-align: center;
         font-size: $primarySize;
@@ -128,12 +128,16 @@
             margin: 30px 0;
             padding: 0px 15px;
             width: 100%;
+
+            p{
+                padding: 0 15px;
+            }
         }
     }
 
     .promiseImg {
         position: relative;
-        height: 500px;
+        height: 600px;
         background-image: url(../images/homeFlower.jpg);
         background-position: center;
         background-repeat: no-repeat;
