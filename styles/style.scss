@@ -121,6 +121,25 @@ body {
 	}
 }
 
+.phone { 
+	background: #139675;
+	&:hover {
+		background: darken(#139675, 10%);
+	}
+	&:active,
+	&:focus {
+		background: darken(#139675, 20%);
+	}
+	&:after {
+		content: "\F095";
+	}
+	&:hover:after {
+		-webkit-animation: wiggle 1.5s alternate ease infinite;
+		animation: wiggle .1s alternate ease infinite;
+	}
+}
+
+
 @-webkit-keyframes bounceright {
 	from { -webkit-transform: translateX(0); }
 	to   { -webkit-transform: translateX(3px); }
@@ -129,6 +148,16 @@ body {
 @keyframes bounceright {
 	from { transform: translateX(0); }
 	to   { transform: translateX(3px); }
+}
+
+@-webkit-keyframes wiggle {
+	from { -webkit-transform: rotate(0deg); }
+	to   { -webkit-transform: rotate(30deg); }
+}
+
+@keyframes wiggle {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(30deg); }
 }
 
 
