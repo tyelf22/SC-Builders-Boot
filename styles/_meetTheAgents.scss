@@ -9,6 +9,7 @@
     .agentContact{
         display: flex;
         align-items: center;
+        
 
         i{
             font-size: 20px;
@@ -21,20 +22,23 @@
         
         p{
             margin-bottom: 0;
+            
 
         }
 
         .borderAgents{
-            border: solid black 1px;
             border-radius: 20px;
             width: auto;
             height: auto;
             padding: 5px 10px;
             margin-right: 10px;
+            background-color: #29a329;
+            color: white;
+            
             
             
             &:hover {
-            color: green;
+            background-color: green;
 
             
             
@@ -43,7 +47,7 @@
         }
 
     .callingAgents{
-        color: black;
+        color: white;
         text-decoration: none;
     }
 
