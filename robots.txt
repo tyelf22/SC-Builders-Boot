@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: sc.builders/sitemap.xml
+Sitemap: https://sc.builders/sitemap.xml
