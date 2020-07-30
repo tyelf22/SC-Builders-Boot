@@ -128,19 +128,24 @@
         }
 
         .promiseCol {
-            margin: 30px 0;
+            margin: 10px 0;
             padding: 0px 15px;
             width: 100%;
 
+            h3{
+                margin: 0;
+            }
+
             p{
-                padding: 0 15px;
+                padding: 0 20px;
+                margin-top: 5px;
             }
         }
     }
 
     .promiseImg {
         position: relative;
-        height: 600px;
+        height: 400px;
         background-image: url(../images/homeFlower.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -349,4 +354,32 @@
             }
         }
     }
-}    
+}  
+
+
+@media (min-width: 1200px) {
+    .homeCont{
+        .promiseImg{
+            height: 600px;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .homeCont{
+        .promiseImg{
+            height: 600px;
+        }
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .homeCont{
+        .promiseImg{
+            height: 520px;
+        }
+    }
+
+}
