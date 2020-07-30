@@ -1,122 +1,79 @@
-.testimonialBg{
+.testimonialBg {
     background-image: url(../images/quotesCroppedFinal.jpeg);
     background-position: center;
 }
 
-.testimonialContainer{
-   
-    padding: 0;
+.testimonialContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: $primaryBMargin;
+    .card{
+        width: 100%;
+        margin: 10px 5px;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+        .insideCard{
+            
+            .cardAtts{
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                
+                img{
+                   width: 150px;
+                   height: 150px; 
+                   border-radius: 100px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+    
+            }
+            .cardDesc{
+
+
+                width: 250px;
+    
+                q{
+                    font-style: italic;
+                    display: block;
+                    background: #FDE4E0;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+
+    }
 
     .checked {
         color: orange;
-      }
+    }
     
-
-    .testimonialCards {
-        display: block;
-        justify-content: space-evenly;
-
-
-        .row1{
-            box-shadow: 4px 4px 10px grey;
-        }
-        
-        .testCard2{
-            
-                height: auto;
-                width: 200px;
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-                padding: 20px 10px;
-                background-color:#FFE4E1;
-                border-radius: 8px;
-
-                margin-top: auto;
-                margin-bottom: auto;
-                position: relative;
-        
-    }
-
-        .testCard1 {
-            height: 300px;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 10px 10px 10px;
-            
-            margin-top: 10px;
-            position: relative;
-
-            q{
-                font-style: italic;
-            }
-
-
-            h2 {
-                font-size: 20px;
-                &:after {
-                    background-color: $primaryColor;
-                    bottom: 0;
-                    content: "";
-                    display: block;
-                    height: 2.5px;
-                    width: 50px;
-                    margin: 5px auto 0px auto;
-                }
-           }
-
-           p{
-            font-size: 12px;
-
-        }
-
-            img {
-                height: 150px;
-                width: 150px;
-                border-radius: 100px;
-                margin-bottom: 10px;
-            }
-        }
-        }
-    }
-
-    @media (min-width: 768px) {
-        .testimonialContainer {
-            display: block;
-    
-            .testimonialCards {
-                display: flex;
-            }
-        }
-    }
-
-
-
-    @media (min-width: 950px) {
-        .testimonialContainer {
-            
-            margin-bottom: 0;
-        }
-    }
-
-
-
-@media (min-width: 1200px) {
-    .testimonialContainer {
-        display: block;
-
-        .testimonialCards {
-            display: flex;
-            
-        }
-    }
 }
 
+@media (min-width: 800px){
+    .testimonialContainer {
+        .card{
+            margin: 20px 5px;
+            width: 45%;
+        }
+    }
 
+}
 
-    
+@media (min-width: 1280px){
+    .testimonialContainer {
+        .card{
+            margin: 20px
+        }
+    }
+
+}
