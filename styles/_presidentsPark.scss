@@ -18,12 +18,12 @@ h3{
 
 .presParkContainer{
     align-items: center;
-    background-color: #F1F1F3;
     padding: 100px 300px;
 }
 
 .presPark {
     padding: 0;
+    
 
     h2 {
         text-align: center;
@@ -112,6 +112,31 @@ h3{
     }
 
 }
+
+
+.pParkInfoContainer{
+    .row{
+        height: 600px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 950px){
     .circles{
