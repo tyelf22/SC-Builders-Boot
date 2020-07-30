@@ -122,13 +122,13 @@ body {
 }
 
 .phone { 
-	background: #139675;
+	background: #444444;
 	&:hover {
-		background: darken(#139675, 10%);
+		background: darken(#444444, 10%);
 	}
 	&:active,
 	&:focus {
-		background: darken(#139675, 20%);
+		background: darken(#444444, 20%);
 	}
 	&:after {
 		content: "\F095";

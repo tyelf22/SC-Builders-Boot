@@ -1,4 +1,4 @@
-.agentbg{
+.agentbg {
     background-image: url(../images/agentbg.jpg);
     background-position: top;
 }
@@ -6,53 +6,66 @@
 .agents {
     overflow-x: hidden;
 
-    .agentBorder{
+    .agentBorder {
         border-left: solid red 2px;
         padding-left: 15px;
     }
 
-    .agentContact{
+    p {
+        margin-bottom: 5px;
+    }
+
+    .agentContact {
         display: flex;
         align-items: center;
-        
+        margin-bottom: 20px;;
 
-        i{
+        i {
             font-size: 20px;
         }
 
-        p{
-            margin-bottom: 0;
-            
 
+
+        .callingAgents {
+            color: white;
+            text-decoration: none;
         }
-
-
-    .callingAgents{
-        color: white;
-        text-decoration: none;
     }
-
-}
 
     margin-bottom: $primaryBMargin;
-    .agentImage1 {
-        height: 320px;
-        width: 320px;
+    .agentImages {
+        height: 250px;
+        width: 250px;
         border-radius: 100%;
-
-    }
-
-    .agentImage2 {
-        border-radius: 100%;
-        height: 320px;
-        width: 320px;
     }
 
     .agentRow1 {
-        margin-bottom: 20px;
+        margin-bottom: $primaryBMargin;
         padding: 10px 0px;
     }
 
 }
 
 
+//**************Media Query*****************
+@media (min-width: 650px) {
+    .agents{
+        .agentImages {
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+        }
+    }
+}
+
+
+@media (min-width: 799px) {
+    .agents{
+        .agentImages {
+            height: 320px;
+            width: 320px;
+            border-radius: 100%;
+        }
+    }
+
+}
