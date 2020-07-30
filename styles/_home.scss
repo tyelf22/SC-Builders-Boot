@@ -1,6 +1,6 @@
 //Home Jumbo
 .homeJumbo {
-    height: 100vh;
+    height: 92vh;
     background-image: url(../images/homeBGLarge.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -284,6 +284,7 @@
 @media (min-width: 950px) {
     //Home Jumbo
     .homeJumbo {
+        height: 100vh;
         text-align: left;
 
         .homeJumboCont {
