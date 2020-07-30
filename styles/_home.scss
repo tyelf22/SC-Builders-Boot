@@ -1,6 +1,6 @@
 //Home Jumbo
 .homeJumbo {
-    height: 92vh;
+    height: 93vh;
     background-image: url(../images/homeBGLarge.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -119,6 +119,8 @@
 
         i {
             font-size: 40px;
+            text-shadow: 5px 9.36px 7.896px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
         }
 
         img {
