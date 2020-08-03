@@ -107,18 +107,28 @@ h3{
         border: solid $primaryColor 1px;
 
         transition: .7s;
-        
-
     }
-
 }
 
 
 .pParkInfoContainer{
     .row{
-        height: 600px;
+        height: auto;
         align-items: center;
         text-align: center;
+        
+
+        p{
+            padding:40px 40px 0px 20px;
+        }
+
+        h1{
+            padding-top:20px;
+        }
+
+        .noPadding{
+            padding:40px 20px 40px 40px;
+        }
     }
 }
 
