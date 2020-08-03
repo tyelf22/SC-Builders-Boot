@@ -15,6 +15,7 @@
     }
 
     .row1{
+        margin-bottom: $primaryBMargin;
         
         .aboutimage1{
          background-image: url(../images/drillLarge.jpg);
@@ -30,6 +31,7 @@
            }
     }
     .row2{
+        margin-bottom: $primaryBMargin;
         .aboutimage2{
         background-image: url(../images/aboutBuiltForLiving.jpg);
         } 
@@ -45,6 +47,7 @@
            }
     }
     .row3{
+        
         .aboutimage3{
         background-image: url(../images/ourMission.jpg);
         } 
