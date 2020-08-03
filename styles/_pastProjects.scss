@@ -21,12 +21,12 @@
 .projectImages {
     .projectsGrid {
         .com{
-
             img{
             height: 203px;
         }
     }
         .projectsCell {
+            cursor: pointer;
             margin: 1rem;
             text-align: center;
             h1{
@@ -48,13 +48,6 @@
         }
     }
 }
-
-.modal{
-    
-    
-}
-
-
 
 
 
